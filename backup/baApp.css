@@ -1,0 +1,185 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #d8bfd8;
+  font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* ← スマホでも余白 */
+  box-sizing: border-box;
+}
+
+.question-container, .result-container {
+  background: #e6e6fa;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* PC時は最大600px */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.choice-button {
+  margin: 10px 0;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.choice-button:hover {
+  background-color: #f0e6f0;
+}
+
+.submit-button {
+  margin-top: 16px; /* ←ボタンの上に16pxの余白ができる！ */
+}
+
+/* タイマーとか戻るボタンの部分 */
+.timer, .back-button-container {
+  margin: 20px 0;
+}
+
+/* --- スマホ向けレスポンシブ調整 --- */
+@media (max-width: 600px) {
+  .question-container, .result-container {
+    padding: 15px;
+  }
+  
+  .choice-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .timer {
+    font-size: 1.2rem;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.quiz-container {
+  min-height: 100vh; /* これで常に全画面分高さ確保！ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px; /* ボタン同士に16pxのすき間 */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.special-background {
+  background: linear-gradient(135deg, #ffeb3b, #ffc107, #ff9800);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s ease infinite;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ffeb3b, 0 0 30px #ffc107, 0 0 40px #ff9800;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.result-title {
+  color: #ff4500; /* たとえばオレンジレッド */
+  margin: 0 0 4px 0; /* 上右下左 */
+}
+
+.result-score {
+  margin: 0;
+}
+
+.comment-box {
+  display: inline-block;     /* 中身の大きさに合わせる */
+  border: 3px solid #ccc; /* 枠線の太さと色 */
+  padding: 0px 50px;        /* 一回り大きく見せる余白 */
+  margin-top: 2px;        /* 上に少し余白 */
+  border-radius: 8px;      /* 角を丸くする（好みで） */
+  background-color: #f9f9f9; /* 背景色を少し明るくしてもいいかも */
+  text-align: center;       /* コメントを中央揃え */
+}
+
+.result-container p, .result-container h2 {
+  margin-bottom: 2px;  /* 「あなたの得点は～」と「一言コメント」間の間隔を調整 */
+}
+
+.comment-box {
+  margin-top: 2px; /* 一言コメントの枠とその上の「一言コメント」の間隔を縮める */
+  padding: 12px 20px; /* 枠の内側に少し余白 */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.comment-label {
+  font-weight: bold;  /* 一言コメントのテキスト部分を太字に */
+}
