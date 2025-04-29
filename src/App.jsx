@@ -272,6 +272,18 @@ function App() {
     setPage("quiz"); // ←リトライ時はトップに戻らない！
   };
 
+  const handleStart = () => {
+  setShuffledQuestions(shuffleArray(quizData).slice(0, 10)); // ←明示的にシャッフル
+  setCurrentQuestionIndex(0);
+  setScore(0);
+  setShowResult(false);
+  setAnswers([]);
+  setTimeLeft(548);
+  setTimerActive(true);
+  setInputValues([]);
+  setPage("quiz");
+};
+
   const goBackOneQuestion = () => {
     if (currentQuestionIndex > 0)
       setCurrentQuestionIndex(currentQuestionIndex - 1);
