@@ -143,6 +143,16 @@ function App() {
       }
     });
 
+    useEffect(() => {
+  if (page === "quiz") {
+    // スクロール許可
+    document.body.style.overflow = 'auto';
+
+    // ページ最上部へスクロール
+    window.scrollTo(0, 0);
+  }
+}, [page]);
+
     const newAnswer = {
       question: currentQuestion.text,
       yourAnswer: answerText,
