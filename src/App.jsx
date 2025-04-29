@@ -173,7 +173,7 @@ function App() {
       setTimerActive(false);
       setPage("result");
     }
-  }, 1000); // ここで1000ms遅延
+  }, 100); // ここで100ms遅延
 
     const nextIndex = currentQuestionIndex + 1;
     if (nextIndex < shuffledQuestions.length) {
