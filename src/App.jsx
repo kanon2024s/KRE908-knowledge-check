@@ -139,6 +139,21 @@ function App() {
     }
   }, [page, currentQuestionIndex]);
 
+useEffect(() => {
+  if (page === "quiz") {
+    // クイズページに遷移する際にシャッフルを実行
+    const shuffled = shuffleArray(quizData).slice(0, 10);
+    setShuffledQuestions(shuffled);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setShowResult(false);
+    setAnswers([]);
+    setTimeLeft(548); // タイマー初期化
+    setTimerActive(true); // タイマー再開
+    setInputValues([]);
+  }
+}, [page]); // pageが"quiz"に変わるタイミングで実行
+
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
     const wasCorrect = prevAnswer?.isCorrect;
