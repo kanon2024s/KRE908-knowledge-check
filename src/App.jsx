@@ -68,7 +68,7 @@ function App() {
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
-  useEffect(() => {
+  fect(() => {
     if (!timerActive || showResult || page !== "quiz") return; // ← ここにpageチェック追加
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -138,11 +138,6 @@ function App() {
       }, 0);
     }
   }, [page, currentQuestionIndex]);
-
-    useEffect(() => {
-  // quizDataが変更されるたびにシャッフルを再実行
-  setShuffledQuestions(shuffleArray(quizData).slice(0, 10));
-}, [quizData]); // quizDataが変わるたびに実行
 
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
