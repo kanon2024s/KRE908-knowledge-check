@@ -154,6 +154,8 @@ function App() {
     newAnswers[currentQuestionIndex] = newAnswer;
     setAnswers(newAnswers);
 
+    const nextIndex = currentQuestionIndex + 1; // nextIndexを明示的に定義
+
    // ✅ モバイル誤タップ対策として100ms待つ
     setTimeout(() => {
     if (nextIndex < shuffledQuestions.length) {
