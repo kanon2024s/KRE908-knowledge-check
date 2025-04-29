@@ -143,6 +143,11 @@ function App() {
     const prevAnswer = answers[currentQuestionIndex];
     const wasCorrect = prevAnswer?.isCorrect;
 
+    useEffect(() => {
+  // quizDataが変更されるたびにシャッフルを再実行
+  setShuffledQuestions(shuffleArray(quizData).slice(0, 10));
+}, [quizData]); // quizDataが変わるたびに実行
+
     setScore((prevScore) => {
       if (!prevAnswer) {
         return isCorrect ? prevScore + 1 : prevScore;
