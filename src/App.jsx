@@ -118,6 +118,16 @@ function App() {
 }, [page]);
 
   useEffect(() => {
+  if (page === "quiz") {
+    // スクロール許可
+    document.body.style.overflow = 'auto';
+
+    // ページ最上部へスクロール
+    window.scrollTo(0, 0);
+  }
+}, [page]);
+
+  useEffect(() => {
     // クイズ中でchoice問題の時にフォーカスを外す
     if (page === "quiz" && currentQuestion?.type === "choice") {
       // 1フレーム後にアクティブ要素をぼかす
@@ -153,16 +163,6 @@ function App() {
     const newAnswers = [...answers];
     newAnswers[currentQuestionIndex] = newAnswer;
     setAnswers(newAnswers);
-
-    useEffect(() => {
-  if (page === "quiz") {
-    // スクロール許可
-    document.body.style.overflow = 'auto';
-
-    // ページ最上部へスクロール
-    window.scrollTo(0, 0);
-  }
-}, [page]);
 
     const nextIndex = currentQuestionIndex + 1;
     if (nextIndex < shuffledQuestions.length) {
