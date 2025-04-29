@@ -154,17 +154,6 @@ function App() {
     newAnswers[currentQuestionIndex] = newAnswer;
     setAnswers(newAnswers);
 
-   // ✅ モバイル誤タップ対策として100ms待つ
-    setTimeout(() => {
-    if (nextIndex < shuffledQuestions.length) {
-      setCurrentQuestionIndex(nextIndex);
-    } else {
-      setShowResult(true);
-      setTimerActive(false);
-      setPage("result");
-    }
-  }, 100); // ここで100ms遅延
-
     useEffect(() => {
   if (page === "quiz") {
     // スクロール許可
