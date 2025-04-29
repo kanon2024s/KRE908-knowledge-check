@@ -404,6 +404,17 @@ useEffect(() => {
 </button>
   <button onClick={handleRetry}>リトライ</button>
 </div>
+<div className="button-group">
+  <button onClick={() => window.open(twitterShareUrl, '_blank')}>
+    Twitterでシェア
+  </button>
+  <button onClick={() => window.open(facebookShareUrl, '_blank')}>
+    Facebookでシェア
+  </button>
+  <button onClick={() => window.location.href = lineShareUrl}>
+    LINEでシェア
+  </button>
+</div>
         </div>
       )}
     </div>
