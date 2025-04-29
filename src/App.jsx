@@ -117,6 +117,18 @@ function App() {
   }
 }, [page]);
 
+  useEffect(() => {
+    // クイズ中でchoice問題の時にフォーカスを外す
+    if (page === "quiz" && currentQuestion?.type === "choice") {
+      // 1フレーム後にアクティブ要素をぼかす
+      setTimeout(() => {
+        if (document.activeElement instanceof HTMLElement) {
+          document.activeElement.blur();
+        }
+      }, 0);
+    }
+  }, [page, currentQuestionIndex]);
+
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
     const wasCorrect = prevAnswer?.isCorrect;
