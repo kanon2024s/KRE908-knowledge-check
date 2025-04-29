@@ -152,29 +152,21 @@ function App() {
     }
   };
 
-  const renderChoices = (choices) => {
-  useEffect(() => {
-    // マウント直後にフォーカスを外す
-    setTimeout(() => {
-      document.activeElement?.blur();
-    }, 0);
-  }, [currentQuestionIndex]);
-
-  return choices.split(";").map((choice, index) => (
-    <button
-      key={index}
-      onClick={() =>
-        handleAnswer(
-          choice.trim() === currentQuestion.correctAnswer.trim(),
-          choice
-        )
-      }
-      className="choice-button"
-    >
-      {choice}
-    </button>
-  ));
-};
+ const renderChoices = (choices) =>
+    choices.split(";").map((choice, index) => (
+      <button
+        key={index}
+        onClick={() =>
+          handleAnswer(
+            choice.trim() === currentQuestion.correctAnswer.trim(),
+            choice
+          )
+        }
+        className="choice-button"
+      >
+        {choice}
+      </button>
+    ));
 
   const renderTextFields = () => {
     const labels = currentQuestion.fields
