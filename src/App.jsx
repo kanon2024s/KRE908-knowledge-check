@@ -103,15 +103,19 @@ function App() {
   }, [currentQuestionIndex]);
 
   useEffect(() => {
-    if (page === "top") {
-      const originalStyle = window.getComputedStyle(document.body).overflow;
-      document.body.style.overflow = 'hidden'; // トップページでスクロール禁止
-  
-      return () => {
-        document.body.style.overflow = originalStyle; // 他ページに遷移したとき元に戻す
-      };
-    }
-  }, [page]);
+  if (page === "top") {
+    // スクロール位置をリセット
+    window.scrollTo(0, 0);
+
+    // スクロール禁止
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }
+}, [page]);
 
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
