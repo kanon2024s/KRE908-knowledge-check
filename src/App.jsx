@@ -143,7 +143,18 @@ function App() {
       }
     });
 
-    // ✅ モバイル誤タップ対策として100ms待つ
+    const newAnswer = {
+      question: currentQuestion.text,
+      yourAnswer: answerText,
+      correctAnswer: currentQuestion.correctAnswer,
+      isCorrect,
+    };
+
+    const newAnswers = [...answers];
+    newAnswers[currentQuestionIndex] = newAnswer;
+    setAnswers(newAnswers);
+
+   // ✅ モバイル誤タップ対策として100ms待つ
     setTimeout(() => {
     if (nextIndex < shuffledQuestions.length) {
       setCurrentQuestionIndex(nextIndex);
@@ -163,17 +174,6 @@ function App() {
     window.scrollTo(0, 0);
   }
 }, [page]);
-
-    const newAnswer = {
-      question: currentQuestion.text,
-      yourAnswer: answerText,
-      correctAnswer: currentQuestion.correctAnswer,
-      isCorrect,
-    };
-
-    const newAnswers = [...answers];
-    newAnswers[currentQuestionIndex] = newAnswer;
-    setAnswers(newAnswers);
 
     const nextIndex = currentQuestionIndex + 1;
     if (nextIndex < shuffledQuestions.length) {
