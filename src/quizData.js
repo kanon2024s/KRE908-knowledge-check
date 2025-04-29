@@ -364,7 +364,7 @@ const quizData = [
     {
       "FIELD1": 51,
       "type": "text",
-      "text": "「KREVA CONCERT TOUR 2023『NO REASON』」の最終公演にてICEの国岡真由美がゲストで登場しMellow Blueという曲を披露した。<br />さてその次にKREVAが歌った曲とはなんでしょうか?",
+      "text": "「CONCERT TOUR 2023 NO REASON」の最終公演にてICEの国岡真由美がゲストで登場しMellow Blueという曲を披露した。<br />さてその次にKREVAが歌った曲とはなんでしょうか?",
       "fields": "答え",
       "correctAnswer": "Have a nice day!;Have a nice day;ハバナイスデイ;ハバナイ",
       "tags": ["代表のみ"]
