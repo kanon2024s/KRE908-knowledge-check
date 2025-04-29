@@ -179,6 +179,9 @@ useEffect(() => {
     newAnswers[currentQuestionIndex] = newAnswer;
     setAnswers(newAnswers);
 
+    // ここでinputValuesをリセット
+    setInputValues([]);  // 次の問題に進む前にinputValuesをリセット
+
     // ✅ モバイル誤タップ対策として100ms待つ
     setTimeout(() => {
     if (nextIndex < shuffledQuestions.length) {
