@@ -278,7 +278,9 @@ function App() {
   };
 
   const handleStart = () => {
-  setShuffledQuestions(shuffleArray(quizData).slice(0, 10)); // ←明示的にシャッフル
+  // quizDataのシャッフルを確実に実行
+  const shuffled = shuffleArray(quizData).slice(0, 10);
+  setShuffledQuestions(shuffled);  // シャッフル後に新しい質問リストを設定
   setCurrentQuestionIndex(0);
   setScore(0);
   setShowResult(false);
