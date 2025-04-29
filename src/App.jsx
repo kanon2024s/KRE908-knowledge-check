@@ -102,6 +102,17 @@ function App() {
     }
   }, [currentQuestionIndex]);
 
+  useEffect(() => {
+    if (page === "top") {
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = 'hidden'; // トップページでスクロール禁止
+  
+      return () => {
+        document.body.style.overflow = originalStyle; // 他ページに遷移したとき元に戻す
+      };
+    }
+  }, [page]);
+
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
     const wasCorrect = prevAnswer?.isCorrect;
