@@ -68,7 +68,7 @@ function App() {
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
-  fect(() => {
+  useEffect(() => {
     if (!timerActive || showResult || page !== "quiz") return; // ← ここにpageチェック追加
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
@@ -84,7 +84,7 @@ function App() {
     return () => clearInterval(timer);
   }, [timerActive, showResult, page]); // ← pageも依存配列に追加
 
-  useEffect(() => {
+  (() => {
     if (
       currentQuestion?.type === "text" ||
       currentQuestion?.type === "text-multi-field"
