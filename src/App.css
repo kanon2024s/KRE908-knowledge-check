@@ -201,7 +201,8 @@ body {
   padding-top: 80px; /* 上に余白を追加して位置調整 */
 }
 
-button:focus {
-  outline: none;
-  box-shadow: none;
+button:focus,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
 }
