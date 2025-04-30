@@ -139,6 +139,15 @@ function App() {
     }
   }, [page, currentQuestionIndex]);
 
+  useEffect(() => {
+  // 選択肢表示後にフォーカスを外す（スマホ誤タップ防止）
+  setTimeout(() => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  }, 100); // 若干遅らせることで次のボタンにblurが効く
+}, [currentQuestionIndex]);
+
 useEffect(() => {
   if (page === "quiz") {
     // クイズページに遷移する際にシャッフルを実行
@@ -207,6 +216,7 @@ useEffect(() => {
     choices.split(";").map((choice, index) => (
       <button
         key={index}
+        tabIndex={-1} // ←これを追加
         onClick={() =>
           handleAnswer(
             choice.trim() === currentQuestion.correctAnswer.trim(),
