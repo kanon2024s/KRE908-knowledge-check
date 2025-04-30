@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* ← スマホでも余白 */
+  padding: 10px; /* ← スマホでも余白 */
   box-sizing: border-box;
 }
 
