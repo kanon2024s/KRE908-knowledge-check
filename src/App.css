@@ -231,7 +231,7 @@ button:focus-within {
 
 .input-note {
   list-style: none;
-  padding-left: 0em;
+  padding-left: -0.2em;
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
@@ -246,6 +246,6 @@ button:focus-within {
 .input-note li::before {
   content: "◆"; /* もしくは🔸 */
   position: absolute;
-  left: 0.5;
+  left: 0.2;
   top: 0.1em; /* 垂直方向の位置微調整 */
 }
