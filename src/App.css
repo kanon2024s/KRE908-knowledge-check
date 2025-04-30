@@ -246,6 +246,6 @@ button:focus-within {
 .input-note li::before {
   content: "◆"; /* もしくは🔸 */
   position: absolute;
-  left: 0;
+  left: 0.5;
   top: 0.1em; /* 垂直方向の位置微調整 */
 }
