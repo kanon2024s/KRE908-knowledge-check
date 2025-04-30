@@ -229,9 +229,23 @@ button:focus-within {
   line-height: 1.5;
 }
 
+.input-note {
+  list-style: none;
+  padding-left: 1.5em;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 1em;
+}
+
+.input-note li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
 .input-note li::before {
-  content: "◆";
-  margin-right: 0.5em;
-  display: inline-block;
-  width: 1.2em;
+  content: "◆"; /* もしくは🔸 */
+  position: absolute;
+  left: 0;
+  top: 0.1em; /* 垂直方向の位置微調整 */
 }
