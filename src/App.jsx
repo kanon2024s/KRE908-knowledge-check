@@ -283,6 +283,11 @@ useEffect(() => {
             )}
           </div>
         ))}
+        <p className="input-note">
+        🔸 全角でも半角でもローマ字はOK！<br />
+        🔸 スペースは気にしなくていいよ！<br />
+        🔸 ただし！「漢字→ひらがな・カタカナ」は不正解扱いになるから要注意！
+        </p>
         <button className="submit-button" onClick={handleSubmit}>送信</button>
       </div>
     );
