@@ -211,11 +211,9 @@ button:focus-within {
   padding-top: 80px; /* 上に余白を追加して位置調整 */
 }
 
-.choice-button:focus,
-.choice-button:focus-visible,
-.choice-button:focus-within {
+.choice-button:focus-visible {
   outline: none !important;
   box-shadow: none !important;
-  border: 2px solid #ccc !important;
+  border-color: #ccc !important;
   background-color: #fff !important;
 }
