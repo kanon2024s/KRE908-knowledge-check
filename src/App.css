@@ -253,7 +253,7 @@ button:focus-within {
 
 @media screen and (max-width: 600px) {
   .input-note li {
-    padding-left: 0.4em;
+    padding-left: 0.1em;
   }
 
   .input-note li::before {
