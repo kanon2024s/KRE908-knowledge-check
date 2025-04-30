@@ -221,8 +221,17 @@ button:focus-within {
 }
 
 .input-note {
+  list-style: none;
+  padding-left: 1.5em;
   font-size: 0.9rem;
   color: #555;
   margin: 10px 0;
   line-height: 1.5;
+}
+
+.input-note li::before {
+  content: "◆";
+  margin-right: 0.5em;
+  display: inline-block;
+  width: 1.2em;
 }
