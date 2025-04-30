@@ -200,3 +200,8 @@ body {
   min-height: 100vh;
   padding-top: 80px; /* 上に余白を追加して位置調整 */
 }
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
