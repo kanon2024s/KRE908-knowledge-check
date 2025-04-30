@@ -250,3 +250,13 @@ button:focus-within {
   width: 1em;         /* 幅も少し詰める */
   top: 0.1em; /* 垂直方向の位置微調整 */
 }
+
+@media screen and (max-width: 600px) {
+  .input-note li {
+    padding-left: 0.4em;
+  }
+
+  .input-note li::before {
+    width: auto;
+  }
+}
