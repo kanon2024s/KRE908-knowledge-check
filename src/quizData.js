@@ -499,7 +499,7 @@ const quizData = [
     {
       "FIELD1": 70,
       "type": "text",
-      "text": "KREVA CONCERT TOUR'07「K-ing」@日本武道館のゲストDAYにてアンコール含めて最後に歌った曲はなんでしょう",
+      "text": "CONCERT TOUR'07「K-ing」@日本武道館のゲストDAYにてアンコール含めて最後に歌った曲はなんでしょう",
       "fields": "答え",
       "correctAnswer": "終わりたくないオーワラナイ",
     },
