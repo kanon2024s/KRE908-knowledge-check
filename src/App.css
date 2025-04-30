@@ -80,6 +80,8 @@ button:focus-within {
 }
 
 
+
+
 /* --- スマホ向けレスポンシブ調整 --- */
 @media (max-width: 600px) {
   .question-container, .result-container {
@@ -212,6 +214,16 @@ button:focus-within {
 }
 
 .choice-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+  background-color: #fff !important;
+}
+
+html body button:focus,
+html body button:focus-visible,
+html body .choice-button:focus,
+html body .choice-button:focus-visible {
   outline: none !important;
   box-shadow: none !important;
   border-color: #ccc !important;
