@@ -220,12 +220,9 @@ button:focus-within {
   background-color: #fff !important;
 }
 
-html body button:focus,
-html body button:focus-visible,
-html body .choice-button:focus,
-html body .choice-button:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border-color: #ccc !important;
-  background-color: #fff !important;
+.input-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
 }
