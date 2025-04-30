@@ -232,7 +232,7 @@ button:focus-within {
 
 .input-note li {
   position: relative;
-  padding-left: 1.4em; /* ◆と文字の距離を微調整 */
+  padding-left: 1.6em; /* ◆と文字の距離を微調整 */
 }
 
 .input-note li::before {
