@@ -201,8 +201,11 @@ body {
   padding-top: 80px; /* 上に余白を追加して位置調整 */
 }
 
+/* フォーカス時の強調表示を完全に無効化する */
 button:focus,
-button:focus-visible {
+button:focus-visible,
+button:focus-within {
   outline: none !important;
   box-shadow: none !important;
+  border-color: transparent !important;
 }
