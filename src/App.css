@@ -250,32 +250,3 @@ button:focus-within {
     padding-left: 0.8em;
   }
 }
-
-.difficulty-selector {
-  margin: 1em 0;
-  text-align: center;
-}
-
-.difficulty-button {
-  margin: 0.3em;
-  padding: 0.5em 1em;
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.difficulty-button.selected {
-  background-color: #9370db;
-  color: white;
-  font-weight: bold;
-}
-
-
-
-
-
-
-
-
