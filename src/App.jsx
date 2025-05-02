@@ -267,7 +267,7 @@ useEffect(() => {
       <div>
         {labels.map((label, index) => (
           <div key={index}>
-            {["人", "個", "色", "ver", "点"].includes(label) ? (
+            {["人", "個", "色", "ver", "点", "県", "男"].includes(label) ? (
               <>
                 <input
                   type="text"
@@ -322,25 +322,21 @@ useEffect(() => {
   return (
     <div className="quiz-container">
       {page === "top" && (
-        <div className="top-page">
-          <h1 className="text-5xl font-bold title1">KREVA Knowledge Check</h1>
-          <div className="difficulty-selector">
-  <p>難易度を選択してください：</p>
-  {["all", "easy", "medium", "hard"].map((level) => (
-    <button
-      key={level}
-      onClick={() => setSelectedDifficulty(level)}
-      className={`difficulty-button ${selectedDifficulty === level ? "selected" : ""}`}
-    >
-      {{
-        all: "すべてから出題",
-        easy: "簡単な問題はまだない",
-        medium: "普通でも難しいかも",
-        hard: "これは結構難しいらしい",
-      }[level]}
-    </button>
-  ))}
-</div>
+  <div className="top-page">
+    <h1 className="text-5xl font-bold title1">KREVA Knowledge Check</h1>
+
+    <div className="difficulty-select">
+      <p>難易度を選んでね：</p>
+      <select
+        value={selectedDifficulty}
+        onChange={(e) => setSelectedDifficulty(e.target.value)}
+      >
+        <option value="all">すべて</option>
+        <option value="easy">簡単な問題はまだない</option>
+        <option value="normal">普通でも難しいかも</option>
+        <option value="hard">これは難しいらしい</option>
+      </select>
+    </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
         </div>
       )}
