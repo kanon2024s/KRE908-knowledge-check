@@ -377,7 +377,7 @@ const quizData = [
       "type": "text",
       "text": "47都道府県RAPにて以下のリリックは何県と韻を踏む為のフリでしょう。<br />「進み続けることに意味がある気付けば到着」",
       "fields": "答え",
-      "correctAnswer": "新潟"
+      "correctAnswer": "新潟",
       "fields": "県"  
     },
     {
