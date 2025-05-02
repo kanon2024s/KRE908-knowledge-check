@@ -54,6 +54,7 @@ const isMultiFieldCorrectAnswer = (userAnswers, correctAnswer) => {
 };
 
 function App() {
+  const [selectedDifficulty, setSelectedDifficulty] = useState("all"); // ←★これを追加
   const [page, setPage] = useState("top"); // ←ここ追加！！
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -150,18 +151,22 @@ function App() {
 
 useEffect(() => {
   if (page === "quiz") {
-    // クイズページに遷移する際にシャッフルを実行
-    const shuffled = shuffleArray(quizData).slice(0, 10);
+    const filtered =
+      selectedDifficulty === "all"
+        ? quizData
+        : quizData.filter((q) => q.difficulty === selectedDifficulty);
+
+    const shuffled = shuffleArray(filtered).slice(0, 10);
     setShuffledQuestions(shuffled);
     setCurrentQuestionIndex(0);
     setScore(0);
     setShowResult(false);
     setAnswers([]);
-    setTimeLeft(548); // タイマー初期化
-    setTimerActive(true); // タイマー再開
+    setTimeLeft(548);
+    setTimerActive(true);
     setInputValues([]);
   }
-}, [page]); // pageが"quiz"に変わるタイミングで実行
+}, [page, selectedDifficulty]); // ← selectedDifficulty を依存配列に追加
 
   const handleAnswer = (isCorrect, answerText) => {
     const prevAnswer = answers[currentQuestionIndex];
@@ -319,6 +324,18 @@ useEffect(() => {
       {page === "top" && (
         <div className="top-page">
           <h1 className="text-5xl font-bold title1">KREVA Knowledge Check</h1>
+          <div className="difficulty-select">
+      <p>難易度を選択してください：</p>
+      <select
+        value={selectedDifficulty}
+        onChange={(e) => setSelectedDifficulty(e.target.value)}
+      >
+        <option value="all">すべて</option>
+        <option value="easy">簡単</option>
+        <option value="normal">普通</option>
+        <option value="hard">難しい</option>
+      </select>
+    </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
         </div>
       )}
