@@ -5,6 +5,7 @@ const quizData = [
       "text": "基準のPVでKREVAは最後どの職業に扮装する?",
       "choices": "レコード屋;牛丼屋;トラック運転手;配達員",
       "correctAnswer": "配達員"
+      "difficulty": "easy"
     },
     {
       "FIELD1": 2,
@@ -13,6 +14,7 @@ const quizData = [
       "choices": "ピラティス;ヨガ;水泳;習字",
       "fields": "",
       "correctAnswer": "水泳"
+　　　 "difficulty": "easy"
     },
     {
       "FIELD1": 3,
@@ -20,6 +22,7 @@ const quizData = [
       "text": "KREVAが当時姉から借りたカセットテープの一曲目に入っており、別のカセットテープ46分全てその曲を再録音して聴いていたほど気に入った一曲はなに",
       "choices": "Merry Christmas Mr. Lawrence;君に、胸キュン。;Humpin'Around(Prelude);め組のひと",
       "correctAnswer": "Merry Christmas Mr. Lawrence"
+　　　"difficulty": "easy"
     },
     {
       "FIELD1": 4,
