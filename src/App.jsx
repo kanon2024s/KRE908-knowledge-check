@@ -326,16 +326,16 @@ useEffect(() => {
     <h1 className="text-5xl font-bold title1">KREVA Knowledge Check</h1>
 
     <div className="difficulty-select">
-      <p>難易度を選んでね：</p>
-      <select
-        value={selectedDifficulty}
-        onChange={(e) => setSelectedDifficulty(e.target.value)}
-      >
-        <option value="all">すべて</option>
-        <option value="easy">簡単な問題はまだない</option>
-        <option value="normal">普通でも難しいかも</option>
-        <option value="hard">これは難しいらしい</option>
-      </select>
+  <p>難易度を選んでね：</p>
+  <select
+    value={selectedDifficulty}
+    onChange={(e) => setSelectedDifficulty(e.target.value)}
+  >
+    <option value="all">すべて</option>
+    <option value="easy">簡単な問題はまだない</option>
+    <option value="normal">普通でも難しいかも</option>
+    <option value="hard">これは難しいらしい</option>
+  </select>
     </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
         </div>
