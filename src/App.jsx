@@ -1,3 +1,4 @@
+App.jsx 
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import quizData from "./quizData";
@@ -155,11 +156,12 @@ useEffect(() => {
 
 useEffect(() => {
   if (page === "quiz") {
-    const filtered = selectedDifficulty === "all"
-  ? quizData
-  : quizData.filter((q) => q.difficulty === selectedDifficulty);
+    const filtered =
+      selectedDifficulty === "all"
+        ? quizData
+        : quizData.filter((q) => q.difficulty === selectedDifficulty);
 
-setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
+    const shuffled = shuffleArray(filtered).slice(0, 10);
     setShuffledQuestions(shuffled);
     setCurrentQuestionIndex(0);
     setScore(0);
@@ -336,7 +338,7 @@ setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
   >
     <option value="all">すべて</option>
     <option value="easy">簡単な問題はまだない</option>
-    <option value="medium">普通でも難しいかも</option>
+    <option value="normal">普通でも難しいかも</option>
     <option value="hard">これは難しいらしい</option>
   </select>
     </div>
@@ -351,7 +353,7 @@ setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
             <h2>
               {currentQuestionIndex === 9
                 ? "Q9.8："
-                : `Q.${currentQuestionIndex + 1}：`}
+                : Q.${currentQuestionIndex + 1}：}
               <span
                 dangerouslySetInnerHTML={{
                   __html: currentQuestion.text,
@@ -379,7 +381,7 @@ setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
       )}
 
       {page === "result" && ( //リザルト画面は以下のコードをいじる
-        <div className={`result-container ${score === 10 ? "special-background" : ""}`}>
+        <div className={result-container ${score === 10 ? "special-background" : ""}}>
           <h2 className="result-title">結果</h2>
           <p className="result-score">あなたの得点は {score} 点 / 10 点です。</p>
  
@@ -400,7 +402,7 @@ setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
                 <li key={index}>
                   <p>
                     <strong dangerouslySetInnerHTML={{ 
-                      __html: `Q.${index === 9 ? "9.8" : index + 1}: ${answer.question}` 
+                      __html: Q.${index === 9 ? "9.8" : index + 1}: ${answer.question} 
                     }} />
                   </p>
                   <p>
