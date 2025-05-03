@@ -439,7 +439,7 @@ useEffect(() => {
 }}>
   トップページに戻る
 </button>
-  <button onClick={handleRetry}>リトライ</button>
+  <button onClick={handleRetry} className="retry-button">リトライ</button>
 </div>
        </div>
       )}
