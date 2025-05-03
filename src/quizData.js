@@ -362,7 +362,7 @@ const quizData = [
  {
    "FIELD1": 45,
    "type": "text",
-   "text": "2012年KREVAがTwitterにてラッパーを募って出来た曲はPROPSですが、<br />TwitterでKREVAが元々候補の1人として考えていたラッパーの名前を出したところそのラッパーは1対1でオファー掛けれるように頑張りますと断りをいれる。<br />そのラッパーとは誰か",
+   "text": "2012年KREVAがTwitterにてラッパーを募って出来た曲「PROPS」<br />KREVAはTwitterで元々候補として考えていたラッパーの名前も出した。<br />しかしそのラッパーは1対1でオファーを掛けれるように頑張りますと断りをいれる。<br />そのラッパーとは誰か",
    "correctAnswer": "環ROY;環ロイ",
    "fields": "答え",
    "difficulty": "hard",
