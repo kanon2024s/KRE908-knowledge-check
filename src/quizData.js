@@ -109,7 +109,7 @@ const quizData = [
    "text": "KREVAのシングルCDにカップリングとして収録されている曲で自身の楽曲ではなく、他のアーティストの曲をカバーした3曲ある。<br />今夜はブギーバック、君に、胸キュン。-浮気なヴァカンス-<br />あともう一曲はなに?",
    "correctAnswer": "ベステンダンク;べステンダンク",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "tags": ["代表のみ"]
  },
  {
