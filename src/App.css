@@ -170,7 +170,7 @@ button:focus-within {
 }
 
 .comment-box {
-  font-size: 1.5rem; /* 文字サイズを大きくする */
+  font-size: 1.1rem; /* 文字サイズを大きくする */
   border: 1.5px solid #d8bfd8; /* 枠線の太さと色 */
   padding: 2px 50px;        /* 一回り大きく見せる余白 */
   margin-top: 2px;        /* 上に少し余白 */
