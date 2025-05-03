@@ -383,6 +383,11 @@ useEffect(() => {
           <p className="comment-label">一言コメント</p>
 
           <div className="comment-box">{getRandomCommentForScore(score)}</div>
+          {/* ← ここにボタン配置 */}
+    <div className="button-group">
+      <button className="back-button" onClick={handleGoHome}>トップページに戻る</button>
+      <button className="retry-button" onClick={handleRetry}>リトライ</button>
+    </div>
 
           <h3>各問題の結果</h3>
           <ul>
