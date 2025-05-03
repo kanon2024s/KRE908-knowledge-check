@@ -118,6 +118,10 @@ function App() {
   }
 }, [page]);
 
+useEffect(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}, [currentQuestionIndex]);
+
   useEffect(() => {
   if (page === "quiz") {
     // スクロール許可
