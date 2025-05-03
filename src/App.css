@@ -171,19 +171,17 @@ button:focus-within {
 }
 
 .comment-box {
-  font-size: clamp(0.8rem, 2.5vw, 1.1rem); /* 画面幅に応じて文字サイズが変化 */
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* 画面幅に応じて調整 */
   border: 1.5px solid #d8bfd8;
-  padding: 2px 50px;
+  padding: 6px 20px;
   margin-top: 2px;
   border-radius: 8px;
   background-color: #e7e7eb;
-  white-space: nowrap;
+  white-space: normal; /* ← nowrapをやめて、折り返し可に */
   text-align: center;
-
   width: 100%;
-  max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  word-break: break-word; /* ← 長い語句でも折り返す */
 }
 
 .result-container p, .result-container h2 {
