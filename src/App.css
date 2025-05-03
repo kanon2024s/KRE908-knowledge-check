@@ -176,6 +176,7 @@ button:focus-within {
   margin-top: 2px;        /* 上に少し余白 */
   border-radius: 8px;      /* 角を丸くする（好みで） */
   background-color: #e7e7eb;/* 背景色を少し明るくしてもいいかも */
+  white-space: nowrap; /* 1行に収める */
   text-align: center;       /* コメントを中央揃え */
 }
 
