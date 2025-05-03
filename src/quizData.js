@@ -10,7 +10,7 @@ const quizData = [
  {
    "FIELD1": 2,
    "type": "text",
-   "text": "音色remixがCM楽曲として使われたのは何のお菓子",
+   "text": "どのお菓子のCMとして音色Remixは起用されたか",
    "correctAnswer": "ポッキー",
    "fields": "答え",
    "difficulty": "hard"
@@ -18,7 +18,7 @@ const quizData = [
  {
    "FIELD1": 3,
    "type": "text",
-   "text": "ファンキーグラマラスのPVでCUE ZEROが被っているのはどのブランドの帽子か?",
+   "text": "ファンキーグラマラスのPVでCUE ZEROが被っているのは何というブランドの帽子か?",
    "correctAnswer": "fashion",
    "fields": "答え",
    "difficulty": "hard"
@@ -34,7 +34,7 @@ const quizData = [
  {
    "FIELD1": 5,
    "type": "text",
-   "text": "亀田誠治、布袋寅泰とKREVAが組んだユニット名は?",
+   "text": "KREVAが亀田誠治、布袋寅泰と組んだユニット名とは?",
    "correctAnswer": "THE THREE",
    "fields": "答え",
    "difficulty": "hard"
@@ -42,7 +42,7 @@ const quizData = [
  {
    "FIELD1": 6,
    "type": "text",
-   "text": "2021年に出演した日テレのmusic blood にてKREVAがある人の曲をカバーした。<br />その曲名は?",
+   "text": "2021年に出演した日テレのmusic bloodにてKREVAが久保田利伸のある曲をカバーした。<br />その曲名は?",
    "correctAnswer": "missing",
    "fields": "答え",
    "difficulty": "hard"
@@ -58,7 +58,7 @@ const quizData = [
  {
    "FIELD1": 8,
    "type": "text",
-   "text": "揺さぶるブルーは誰が作ったトラックでしょう",
+   "text": "揺さぶるブルーのトラックを作ったのは誰でしょう",
    "correctAnswer": "千晴",
    "fields": "答え",
    "difficulty": "hard"
@@ -66,7 +66,7 @@ const quizData = [
  {
    "FIELD1": 9,
    "type": "text",
-   "text": "BY PHAR THE DOPESTの安全運転は誰がトラックを作っているでしょう",
+   "text": "BY PHAR THE DOPESTの「安全運転」は誰がトラックを作っているでしょう",
    "correctAnswer": "Mr.Drunk;Mummy-D",
    "fields": "答え",
    "difficulty": "hard"
@@ -74,10 +74,11 @@ const quizData = [
  {
    "FIELD1": 10,
    "type": "text",
-   "text": "KREVAと千晴と大量に曲を作ったことをキッカケにチーム名を決めた。<br />そのチーム名とは?",
+   "text": "KREVAが千晴と一緒に沢山曲を作ったことをキッカケにチーム名を決めた。<br />そのチーム名とは?",
    "correctAnswer": "ストレスFREE;ストレスフリー",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "tags": ["代表のみ"]
  },
  {
    "FIELD1": 11,
@@ -97,11 +98,11 @@ const quizData = [
  },
  {
    "FIELD1": 13,
-   "type": "text",
-   "text": "2016年KREVAが所属していた事務所による<br />studio tribute albumとしてリリースされたアルバム名は何か",
-   "correctAnswer": "monday night studio session",
-   "fields": "答え",
-   "difficulty": "hard"
+   "type": "chice",
+   "text": "2016年KREVAが所属していた事務所からリリースされたstudio tribute albumのアルバム名は何か",
+   "choices": "monday night studio session;sunday night studio session;saturday night studio session;holiday night studio session",
+   "correctAnswer": "monday night studio session",   
+   "difficulty": "normal"
  },
  {
    "FIELD1": 14,
@@ -648,7 +649,7 @@ const quizData = [
  {
    "FIELD1": 80,
    "type": "choice",
-   "text": "客演の作品を含むKREVAのリリックで登場するサッカー選手といえばクアレスマと誰か?",
+   "text": "KREVAのリリックで登場するサッカー選手といえばクアレスマと誰か?<br />(客演の作品も含む)",
    "choices": "ロナウド;ロナウジーニョ;メッシ;本田圭佑",
    "correctAnswer": "ロナウジーニョ",
    "difficulty": "normal"
@@ -656,7 +657,7 @@ const quizData = [
  {
    "FIELD1": 81,
    "type": "choice",
-   "text": "KREVAのシングルCDにカップリングとして収録されている2012Re-Mixは「Have a nice day!」と何か",
+   "text": "KREVAのシングルCDにカップリングとして収録されている2012Re-Mixは「Have a nice day!」ともう一曲は何か",
    "choices": "イッサイガッサイ;あかさたなはまやらわをん;ひとりじゃないのよ;スタート",
    "correctAnswer": "あかさたなはまやらわをん",
    "difficulty": "normal"
@@ -664,7 +665,7 @@ const quizData = [
  {
    "FIELD1": 82,
    "type": "choice",
-   "text": "基準のPVでKREVAは最後どの職業に扮装する?",
+   "text": "基準のPVでKREVAが最後に扮装する職業といえば?",
    "choices": "レコード屋;牛丼屋;トラック運転手;配達員",
    "correctAnswer": "配達員",
    "difficulty": "normal"
