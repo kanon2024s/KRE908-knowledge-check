@@ -251,6 +251,12 @@ button:focus-within {
   }
 }
 .retry-button {
-  font-size: 0.8rem !important;
+  font-size: 0.7rem !important;
   padding: 6px 12px !important;
 }
+
+.back-button {
+  font-size: 0.7rem !important;
+  padding: 6px 12px !important;
+}
+
