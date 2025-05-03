@@ -107,9 +107,10 @@ const quizData = [
    "FIELD1": 14,
    "type": "text",
    "text": "KREVAのシングルCDにカップリングとして収録されている曲で自身の楽曲ではなく、他のアーティストの曲をカバーした3曲ある。<br />今夜はブギーバック、君に、胸キュン。-浮気なヴァカンス-<br />あともう一曲はなに?",
-   "correctAnswer": "べステンダンク",
+   "correctAnswer": "ベステンダンク;べステンダンク",
    "fields": "答え",
    "difficulty": "hard"
+   "tags": ["代表のみ"]
  },
  {
    "FIELD1": 15,
@@ -317,7 +318,7 @@ const quizData = [
  {
    "FIELD1": 40,
    "type": "text",
-   "text": "KREVA CONCERT TOUR '07 「K-ing」@横浜ブリッツにて<br />ライブが終わり楽屋に戻ろうとしたところ客席にから舞台にあるものが投げ入れられました<br />それは何でしょう",
+   "text": "KREVA CONCERT TOUR '07 「K-ing」@横浜ブリッツにて<br />ライブが終わり楽屋に戻ろうとした際、客席から舞台に投げ入れられたものとは何",
    "correctAnswer": "ブラジャー;下着",
    "fields": "答え",
    "difficulty": "hard",
