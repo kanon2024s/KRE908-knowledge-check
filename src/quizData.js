@@ -458,7 +458,7 @@ const quizData = [
    "type": "choice",
    "text": "KREVAのメジャーデビューシングルといえば?",
    "choices": "音色;ひとりじゃないのよ;希望の炎;イッサイガッサイ",
-   "correctAnswer": "希望の炎",
+   "correctAnswer": "音色",
    "difficulty": "normal"
  },
  {
