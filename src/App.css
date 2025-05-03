@@ -251,6 +251,6 @@ button:focus-within {
   }
 }
 .retry-button {
-  font-size: 0.6rem; /* 小さめサイズに調整 */
-  padding: 6px 12px;
+  font-size: 0.6rem !important;
+  padding: 6px 12px !important;
 }
