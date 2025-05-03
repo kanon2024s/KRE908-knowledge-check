@@ -184,8 +184,8 @@ button:focus-within {
 }
 
 .comment-label {
-  font-weight: bold;  /* 一言コメントのテキスト部分を太字に */
-　font-size: 2.5rem !important;
+  font-weight: bold; /* 一言コメントのテキスト部分を太字に */
+  font-size: 1.5rem !important;
 }
 
 .result-container ul {
