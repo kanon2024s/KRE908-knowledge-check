@@ -155,12 +155,11 @@ useEffect(() => {
 
 useEffect(() => {
   if (page === "quiz") {
-    const filtered =
-      selectedDifficulty === "all"
-        ? quizData
-        : quizData.filter((q) => q.difficulty === selectedDifficulty);
+    const filtered = selectedDifficulty === "all"
+  ? quizData
+  : quizData.filter((q) => q.difficulty === selectedDifficulty);
 
-    const shuffled = shuffleArray(filtered).slice(0, 10);
+setShuffledQuestions(shuffleArray(filtered).slice(0, 10));
     setShuffledQuestions(shuffled);
     setCurrentQuestionIndex(0);
     setScore(0);
