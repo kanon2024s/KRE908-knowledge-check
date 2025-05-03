@@ -98,7 +98,7 @@ const quizData = [
  },
  {
    "FIELD1": 13,
-   "type": "chice",
+   "type": "choice",
    "text": "2016年KREVAが所属していた事務所からリリースされたstudio tribute albumのアルバム名は何か",
    "choices": "monday night studio session;sunday night studio session;saturday night studio session;holiday night studio session",
    "correctAnswer": "monday night studio session",   
