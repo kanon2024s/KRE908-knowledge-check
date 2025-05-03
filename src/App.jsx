@@ -430,16 +430,21 @@ useEffect(() => {
             })}
           </ul>
           <div className="button-group">
-          <button onClick={() => {
-  // 必要ならスコア等を初期化（handleRetryを使わない）
-  setScore(0);
-  setCurrentQuestionIndex(0);
-  setAnswers([]);
-  setPage("top");
-}}>
-  トップページに戻る
-</button>
-  <button onClick={handleRetry} className="retry-button">リトライ</button>
+  <button
+    className="back-button"
+    onClick={() => {
+      setScore(0);
+      setCurrentQuestionIndex(0);
+      setAnswers([]);
+      setPage("top");
+    }}
+  >
+    トップページに戻る
+  </button>
+
+  <button onClick={handleRetry} className="retry-button">
+    リトライ
+  </button>
 </div>
        </div>
       )}
