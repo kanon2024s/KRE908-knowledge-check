@@ -640,8 +640,8 @@ const quizData = [
  {
    "FIELD1": 79,
    "type": "choice",
-   "text": "次の曲の内KREVAが単体でビートを作成している曲はどれか",
-   "choices": "Ｈａｖｅ a nice day!;SWEET SWEET メモリーズ;終わりたくないオーワラナイ;ストロングスタイル",
+   "text": "KREVAが一人でビートを作成している曲は次の内どれか",
+   "choices": "Have a nice day!;SWEET SWEET メモリーズ;終わりたくないオーワラナイ;ストロングスタイル",
    "correctAnswer": "SWEET SWEET メモリーズ",
    "difficulty": "normal"
  },
