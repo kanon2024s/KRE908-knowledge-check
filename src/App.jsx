@@ -337,7 +337,7 @@ useEffect(() => {
   >
     <option value="all">すべて</option>
     <option value="easy">簡単な問題はまだない</option>
-    <option value="normal">普通でも難しいかも</option>
+    <option value="medium">普通でも難しいかも</option>
     <option value="hard">これは難しいらしい</option>
   </select>
     </div>
