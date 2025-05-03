@@ -455,7 +455,7 @@ const quizData = [
  {
    "FIELD1": 57,
    "type": "choice",
-   "text": "KERVAのメジャーデビューシングルといえば?",
+   "text": "KREVAのメジャーデビューシングルといえば?",
    "choices": "音色;ひとりじゃないのよ;希望の炎;イッサイガッサイ",
    "correctAnswer": "希望の炎",
    "difficulty": "medium"
@@ -464,8 +464,8 @@ const quizData = [
    "FIELD1": 58,
    "type": "choice",
    "text": "以下のシングルCDの中で初回限定版がないものは?",
-   "choices": "スタート;Have a nice day！;THE SHOW；アグレッシ部",
-   "correctAnswer": "Have a nice day！",
+   "choices": "スタート;Have a nice day!;THE SHOW;アグレッシ部",
+   "correctAnswer": "Have a nice day!",
    "difficulty": "medium"
  },
  {
@@ -496,7 +496,7 @@ const quizData = [
    "FIELD1": 62,
    "type": "choice",
    "text": "以下の中でKREVAが出演した映画として4作目にあたるものはどれか?",
-   "choices": "進撃の巨人 ATTACK ON TITAN;『隠し砦の三悪人 THE LAST PRINCESS』;シン・ゴジラ；461個のおべんとう",
+   "choices": "進撃の巨人 ATTACK ON TITAN;『隠し砦の三悪人 THE LAST PRINCESS』;シン・ゴジラ;461個のおべんとう",
    "correctAnswer": "進撃の巨人 ATTACK ON TITAN",
    "difficulty": "hard"
  },
@@ -504,7 +504,7 @@ const quizData = [
    "FIELD1": 63,
    "type": "choice",
    "text": "シングルCD「希望の炎」はいつ発売されたか",
-   "choices": "2004年9月8日;2004年6月18日;2005年9月8日;2005年6月18日;",
+   "choices": "2004年9月8日;2004年6月18日;2005年9月8日;2005年6月18日",
    "correctAnswer": "2004年6月18日",
    "difficulty": "medium"
  },
