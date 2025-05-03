@@ -185,7 +185,7 @@ button:focus-within {
 
 .comment-label {
   font-weight: bold; /* 一言コメントのテキスト部分を太字に */
-  font-size: 3rem !important;
+  font-size: 1.1rem !important;
 }
 
 .result-container ul {
