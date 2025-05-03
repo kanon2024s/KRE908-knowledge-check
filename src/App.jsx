@@ -353,7 +353,7 @@ useEffect(() => {
             <h2>
               {currentQuestionIndex === 9
                 ? "Q9.8："
-                : Q.${currentQuestionIndex + 1}：}
+                : "Q." + (currentQuestionIndex + 1) + "："}
               <span
                 dangerouslySetInnerHTML={{
                   __html: currentQuestion.text,
