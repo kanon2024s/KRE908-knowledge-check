@@ -268,7 +268,7 @@ const quizData = [
  {
    "FIELD1": 34,
    "type": "text-multi-field",
-   "text": "ファンキーグラマラスのPVでKREVAが来ているアウターの色は何色か?",
+   "text": "ファンキーグラマラスのPVでKREVAが着ているアウターの色は何色か?",
    "correctAnswer": "赤",
    "fields": "色",
    "difficulty": "hard"
