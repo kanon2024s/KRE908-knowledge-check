@@ -347,7 +347,7 @@ const quizData = [
    "FIELD1": 43,
    "type": "text-multi-field",
    "text": "KREVAが908名義で客演に参加した曲は誰の何という曲か",
-   "correctAnswer": "AMIDA,エビスビーツ,EVISBEATS,アミダ;八百万",
+   "correctAnswer": "EVISBEATS,AMIDA,エビスビーツ,アミダ;八百万",
    "fields": "アーティスト名;曲名",
    "difficulty": "hard",
    "tags": ["特別代表"]
