@@ -601,7 +601,7 @@ const quizData = [
  {
    "FIELD1": 74,
    "type": "choice",
-   "text": "COMA-CHIとの楽曲「1on1」の以下のリリックはある曲からサンプリングされている。その曲とは次の内どれ<br />「また始まっちまったようだな毎度決まりのお前の発作が」",
+   "text": "COMA-CHIとの楽曲「1on1」の以下リリックはある曲からサンプリングされている。その曲とは次の内どれ<br />「また始まっちまったようだな毎度決まりのお前の発作が」",
    "choices": "嶋野百恵/Lesson feat. Mummy-D;マボロシ/あまいやまい feat.椎名林檎;Miss Monday/トレジャーハンター feat.Mummy-D;Do What U Gotta Do feat.AI,安室奈美恵 & Mummy-D",
    "correctAnswer": "嶋野百恵/Lesson feat. Mummy-D",
    "difficulty": "hard"
