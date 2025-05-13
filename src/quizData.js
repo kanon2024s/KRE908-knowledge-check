@@ -853,6 +853,119 @@ const quizData = [
    "choices": "スタート;ひとりじゃないのよ;It's for you;希望の炎",
    "correctAnswer": "スタート",
    "difficulty": "hard"
+ },
+ {
+   "FIELD1": 106,
+   "type": "choice",
+   "text": "KREVAがビートメイクを始めるために初めて購入した機材名はなに",
+   "choices": "MPC1000;MPC2000;MPC2500;MPC3000",
+   "correctAnswer": "MPC3000",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 107,
+   "type": "choice",
+   "text": "KREVAがソロプロデュースとしてヒプノシスマイクに提供した楽曲名とは",
+   "choices": "キズアトがキズナとなる;キズとアトがキズナとなる;キズがキズナとなる;キズはキズナとなる",
+   "correctAnswer": "キズアトがキズナとなる",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 108,
+   "type": "choice",
+   "text": "KICK THECAN CREWとしてヒプノシスマイクに提供した楽曲名とは",
+   "choices": "勝つまでやる;蕾が花になる;Three Kings;バラの束",
+   "correctAnswer": "バラの束",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 109,
+   "type": "choice",
+   "text": "KREVAはヒプノシスマイクに提供する曲のリリックを書く際にわざわざ○○に赴いて書いた。<br />〇〇とはどこ",
+   "choices": "渋谷のホテル;スカイツリーが見えるホテル;カラオケ;江戸川区のカフェ",
+   "correctAnswer": "渋谷のホテル",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 110,
+   "type": "choice",
+   "text": "音色remixの冒頭にある「一瞬も1分も1時間も一生一緒に居よう」はある客演曲からのセルフサンプリングとなっている。<br />その曲とは次のうちどれ",
+   "choices": "COMA-CHI/1on1 feat.KREVA;小柳ゆき/beautiful world (KREVA REMIX);Neo/Tiny Honey-Tiny Voice Ultimate Connection feat.KREVA;平井堅/wonderful world KREVA remix",
+   "correctAnswer": "小柳ゆき/beautiful world (KREVA REMIX)",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 111,
+   "type": "choice",
+   "text": "くレーベルコンピ其の二に収録されている曲「mirror mirror」はトラックの作成からリリックを書き上げるまで何時間で作成されたか",
+   "choices": "1時間;2時間;3時間;4時間",
+   "correctAnswer": "2時間",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 112,
+   "type": "choice",
+   "text": "くレーベルコンピ其の二に収録されている曲「ファンタスティック感動」に参加しているMCの組み合わせはどれか",
+   "choices": "KREVA,CUEZERO,DABO,ポチョムキン;KREVA,CUEZERO,WADA,TSUBOI;KREVA,CUEZERO,遊戯＆HIDA;KREVA,CUEZERO,Mummy-D,ERONE",
+   "correctAnswer": "KREVA,CUEZERO,DABO,ポチョムキン",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 113,
+   "type": "choice",
+   "text": "KREVAの両親が経営していた喫茶店の名前は?(既に閉店済み)",
+   "choices": "Paul;Pietro;Michel;Pierre",
+   "correctAnswer": "Pierre",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 114,
+   "type": "choice",
+   "text": "KREVAがいいとものテレフォンショッキングに出た際にフリースタイルでラップを行ったが、完全にフリースタイルではなく元になった曲がある。<br />それは次のうちどれか",
+   "choices": "DJ TATSUTA/よ！マッテマシタ!!feat.KREVA;KREVA introducing ツボイ/醤油ベビ;REMY MA/LIGHTS,CAMERA, ACTION REMIX;千晴/無礼 KING feat.KREVA",
+   "correctAnswer": "REMY MA/LIGHTS,CAMERA, ACTION REMIX",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 115,
+   "type": "choice",
+   "text": "クレハーカップの公式キャラクターの名前とは",
+   "choices": "クウマン;クレクマ;クーマン;クレーマ",
+   "correctAnswer": "クウマン",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 116,
+   "type": "choice",
+   "text": "BY PHAR THE DOPESのCUE ZEROはKREVAと同じ団地育ちである。<br />CUE ZEROは9階に住んでいたがKREVAは何階に住んでいた?",
+   "choices": "7階;8階;9階;12階",
+   "correctAnswer": "7階",
+   "difficulty": "hard"
+ },
+  {
+   "FIELD1": 117,
+   "type": "text",
+   "text": "KREVAのsound cloudにアップされている、「RED PILL Freestyle」ではPROPS参加メンバーの内の1人が不参加の代わりにALI-KICKが参加している。<br />不参加のラッパーとは誰か?",
+   "correctAnswer": "サイプレス上野;サ上;さ上",
+   "fields": "ラッパー名",
+   "difficulty": "hard",
+    "tags": ["代表のみ"]
+ },
+ {
+   "FIELD1": 118,
+   "type": "text",
+   "text": "次のリリックはKREVAのなんという曲のリリックか?<br />「ナンセンスな言葉の断片集なんて聞かせたくねぇんだ」",
+   "correctAnswer": "コトバにできない",
+   "fields": "曲名",
+   "difficulty": "hard"
+ },
+ {
+   "FIELD1": 119,
+   "type": "text",
+   "text": "イッサイガッサイのPVにはその後KREVAを兄ちゃんと慕うラッパーが出演している。<br />それは誰か",
+   "correctAnswer": "千晴",
+   "fields": "ラッパー名",
+   "difficulty": "hard"
  }
 ];
     export default quizData;
