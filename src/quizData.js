@@ -506,7 +506,7 @@ const quizData = [
    "FIELD1": 62,
    "type": "choice",
    "text": "シングルCD希望の炎はいつ発売されたか",
-   "choices": "2004年9月8日;2004年6月18日;2005年9月8日;2005年6月18日;",
+   "choices": "2004年9月8日;2004年6月18日;2005年9月8日;2005年6月18日",
    "correctAnswer": "2004年6月18日",
    "difficulty": "normal"
  },
