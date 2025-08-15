@@ -794,7 +794,7 @@ const quizData = [
    "FIELD1": 98,
    "type": "choice",
    "text": "ある日、KREVAの娘が葉加瀬太郎の情熱大陸に歌詞を付けたそうです。<br />その歌詞とは次のうちどれか",
-   "choices": "悲しみの心持つ人;悲しみと心持つ人;優しさの心持つ人;優しさと心持つ人;",
+   "choices": "悲しみの心持つ人;悲しみと心持つ人;優しさの心持つ人;優しさと心持つ人",
    "correctAnswer": "優しさの心持つ人",
    "difficulty": "hard"
  },
@@ -966,6 +966,46 @@ const quizData = [
    "correctAnswer": "千晴",
    "fields": "ラッパー名",
    "difficulty": "hard"
- }
+ },
+ {
+    "FIELD1": 120,
+    "type": "choice",
+    "text": "音色 ~2019 Ver.~のPVはどこの国で撮影されたか",
+    "choices": "アメリカ;フランス;イギリス;イタリア",
+    "correctAnswer": "イギリス",
+    "difficulty": "medium"
+  },
+  {
+    "FIELD1": 121,
+    "type": "choice",
+    "text": "2018年に開催されたクレバの日 スペシャルライブ ～大阪編～で入場者全員に配られたものは何か",
+    "choices": "ポスター;ステッカー;CD;ペン",
+    "correctAnswer": "CD",
+    "difficulty": "medium"
+  },
+  {
+    "FIELD1": 122,
+    "type": "choice",
+    "text": "2025年にKREVAキャリアでは初となるアンビエントアルバムR. P. P. B. G. M.が配信された。しかし2006年にもアンビエント系の曲を展開するニューラインの発表がされていた。その時の名義とは何か。",
+    "choices": "紅葉;夕焼;白波;残雪",
+    "correctAnswer": "紅葉",
+    "difficulty": "medium"
+  },
+  {
+    "FIELD1": 123,
+    "type": "choice",
+    "text": "KREVAのファンクラブ通称KFCが発足されたのはいつ?",
+    "choices": "2014年9月;2013年1月;2014年1月;2013年9月",
+    "correctAnswer": "2014年1月",
+    "difficulty": "medium"
+  },
+  {
+    "FIELD1": 124,
+    "type": "choice",
+    "text": "KREVAのライブグッズとして発売されたことのないものはどれか",
+    "choices": "ピアス;パスポート;レンゲ;ぬいぐるみ",
+    "correctAnswer": "ぬいぐるみ",
+    "difficulty": "medium"
+  }
 ];
     export default quizData;
