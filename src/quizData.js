@@ -1102,6 +1102,14 @@ const quizData = [
    "choices": "ジングルベル;もろびとこぞりて;神の御子は今宵しも;きよしこの夜",
    "correctAnswer": "きよしこの夜",
    "difficulty": "medium"
+},
+{
+   "FIELD1": 137,
+   "type": "choice",
+   "text": "アルバム「よろしくお願いします」のジャケットでKREVAが着用している服のブランドは？",
+   "choices": "Raf Simons;KRIS VAN ASSCHE;Dries Van Noten;DIRK BIKKEMBERGS",
+   "correctAnswer": "KRIS VAN ASSCHE",
+   "difficulty": "medium"
 }
 ]
     export default quizData;
