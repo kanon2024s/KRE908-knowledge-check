@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import quizData from "./quizData";
+import RankingPage from "./components/RankingPage";
+import ScoreSubmitForm from "./components/ScoreSubmitForm";
+import { recordPlayLog } from "./supabaseHelpers";
 
 const shuffleArray = (array) => {
   const shuffled = [...array];
@@ -169,6 +172,9 @@ useEffect(() => {
     setTimeLeft(548);
     setTimerActive(true);
     setInputValues([]);
+
+    // プレイ回数として1件記録する（失敗してもクイズ自体は続行する）
+    recordPlayLog();
   }
 }, [page, selectedDifficulty]); // ← selectedDifficulty を依存配列に追加
 
@@ -200,25 +206,18 @@ useEffect(() => {
     // ここでinputValuesをリセット
     setInputValues([]);  // 次の問題に進む前にinputValuesをリセット
 
-    // ✅ モバイル誤タップ対策として100ms待つ
-    setTimeout(() => {
-    if (nextIndex < shuffledQuestions.length) {
-      setCurrentQuestionIndex(nextIndex);
-    } else {
-      setShowResult(true);
-      setTimerActive(false);
-      setPage("result");
-    }
-  }, 100); // ここで100ms遅延
-
     const nextIndex = currentQuestionIndex + 1;
-    if (nextIndex < shuffledQuestions.length) {
-      setCurrentQuestionIndex(nextIndex);
-    } else {
-      setShowResult(true);
-      setTimerActive(false);
-      setPage("result"); // クイズ終了後にリザルトページへ
-    }
+
+    // ✅ モバイル誤タップ対策として100ms待ってから画面を切り替える
+    setTimeout(() => {
+      if (nextIndex < shuffledQuestions.length) {
+        setCurrentQuestionIndex(nextIndex);
+      } else {
+        setShowResult(true);
+        setTimerActive(false);
+        setPage("result");
+      }
+    }, 100);
   };
 
  const renderChoices = (choices) =>
@@ -342,7 +341,14 @@ useEffect(() => {
   </select>
     </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
+          <button className="ranking-link-button" onClick={() => setPage("ranking")}>
+            ランキングを見る
+          </button>
         </div>
+      )}
+
+      {page === "ranking" && (
+        <RankingPage onBack={() => setPage("top")} />
       )}
 
       {page === "quiz" && (
@@ -387,7 +393,8 @@ useEffect(() => {
           <p className="comment-label">一言コメント</p>
 
           <div className="comment-box">{getRandomCommentForScore(score)}</div>
-          {/* ← ここにボタン配置 */}
+
+          <ScoreSubmitForm score={score} difficulty={selectedDifficulty} />
 
           <h3>各問題の結果</h3>
           <ul>
