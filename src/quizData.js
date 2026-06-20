@@ -1006,6 +1006,102 @@ const quizData = [
     "choices": "ピアス;パスポート;レンゲ;ぬいぐるみ",
     "correctAnswer": "ぬいぐるみ",
     "difficulty": "medium"
-  }
-];
+  },
+　{
+   "FIELD1": 125,
+   "type": "choice",
+   "text": "DABO、ANARCHYと共演した『I REP』で、KREVAは『あいつ』と何回言っている？",
+   "choices": "6回;7回;8回;9回",
+   "correctAnswer": "8回",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 126,
+   "type": "choice",
+   "text": "KREVAが『好きな食べ物は？』と聞かれた際に答えることにしている食べ物は何？",
+   "choices": "小松菜;マグロ;スムージー;ピーマン",
+   "correctAnswer": "マグロ",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 127,
+   "type": "choice",
+   "text": "日本記念日協会が定める9月8日の記念日として正しいものはどれ？",
+   "choices": "908の日;クレバの日;KREVAの日;くればの日",
+   "correctAnswer": "クレバの日",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 128,
+   "type": "choice",
+   "text": "2012年9月8日からKREVAが主催していた音楽フェスの名前は何？",
+   "choices": "KREVA FESTIVAL;KREVA'sDAY;908 FESTIVAL;クレフェス",
+   "correctAnswer": "908 FESTIVAL",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 129,
+   "type": "choice",
+   "text": "宮本亜門が構成・演出を手がけた舞台『SUPER LOSERZ（スーパールーザーズ）』で、KREVAが演じた役名は何？",
+   "choices": "ミスターK;ミスターX;ミスタールーザー;神",
+   "correctAnswer": "ミスターX",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 130,
+   "type": "choice",
+   "text": "KREVAがCMに起用され、出演・トラック制作・リリックを手がけた、2024年8月19日に創業108周年を迎えた会社はどこ？",
+   "choices": "愛知製鋼(株);大同特殊鋼(株);山陽特殊製鋼(株);日本製鉄(株)",
+   "correctAnswer": "大同特殊鋼(株)",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 131,
+   "type": "choice",
+   "text": "KREVAが初めてレコードをリリースしたのは何歳のとき？",
+   "choices": "16歳;18歳;19歳;20歳",
+   "correctAnswer": "19歳",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 132,
+   "type": "choice",
+   "text": "KREVAが母親に初めて買ってもらった7インチレコードは、誰の何という曲？",
+   "choices": "Limahl「The NeverEnding Story」;a-ha「Take On Me」;Cyndi Lauper「Girls Just Want to Have Fun」;Wham!「Wake Me Up Before You Go-Go」",
+   "correctAnswer": "Limahl「The NeverEnding Story」",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 133,
+   "type": "choice",
+   "text": "KREVAが客演として参加した赤い公園の楽曲は次のうちどれ？",
+   "choices": "羽田空港;TOKYO リトミック;TOKYO TRIP;TOKYO HARBOR",
+   "correctAnswer": "TOKYO HARBOR",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 134,
+   "type": "choice",
+   "text": "現在では旧知の仲である三浦大知との出会いのきっかけとなった人物は誰？",
+   "choices": "千晴;宇多丸;当時のマネージャー;SONOMI",
+   "correctAnswer": "宇多丸",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 135,
+   "type": "choice",
+   "text": "2026年6月18日に一挙配信リリースされたインスト・アルバム5作品に含まれていないものは次のうちどれ？",
+   "choices": "Project K;存在感;GO;嘘と煩悩",
+   "correctAnswer": "GO",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 136,
+   "type": "choice",
+   "text": "武部聡志のプロデュースのもと開催された『KREVA Premium Orchestra Concert』で、オーバーチュアとして演奏された楽曲は何？",
+   "choices": "ジングルベル;もろびとこぞりて;神の御子は今宵しも;きよしこの夜",
+   "correctAnswer": "きよしこの夜",
+   "difficulty": "medium"
+}
+]
     export default quizData;
