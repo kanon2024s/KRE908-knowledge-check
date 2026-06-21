@@ -5,6 +5,7 @@ import newsData from "./newsData";
 import RankingPage from "./components/RankingPage";
 import ScoreSubmitForm from "./components/ScoreSubmitForm";
 import { recordPlayLog } from "./supabaseHelpers";
+import { getAnonymousId } from "./anonymousId";
 
 const shuffleArray = (array) => {
   const shuffled = [...array];
@@ -193,9 +194,6 @@ useEffect(() => {
     setTimeLeft(548);
     setTimerActive(true);
     setInputValues([]);
-
-    // プレイ回数として1件記録する（失敗してもクイズ自体は続行する）
-    recordPlayLog();
   }
 }, [page, selectedDifficulty]); // ← selectedDifficulty を依存配列に追加
 
@@ -240,6 +238,20 @@ useEffect(() => {
       setShowResult(true);
       setTimerActive(false);
       setPage("result");
+
+      // クイズ終了時点で、最終的な点数と間違えた問題をその場で計算してログを記録する。
+      // （setScoreは非同期更新のため、ここでは newAnswers から直接集計する）
+      const finalScore = newAnswers.filter((a) => a?.isCorrect).length;
+      const wrongQuestions = newAnswers
+        .filter((a) => a && !a.isCorrect)
+        .map((a) => a.question);
+
+      recordPlayLog({
+        anonymousId: getAnonymousId(),
+        score: finalScore,
+        difficulty: selectedDifficulty,
+        wrongQuestions,
+      });
     }
   };
 
