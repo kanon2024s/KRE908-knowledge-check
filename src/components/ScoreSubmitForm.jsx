@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { submitRanking } from "./supabaseHelpers";
+import { submitRanking } from "../supabaseHelpers";
 
 const ScoreSubmitForm = ({ score, difficulty }) => {
   const [name, setName] = useState("");
