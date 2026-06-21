@@ -22,6 +22,7 @@ const quizData = [
    "correctAnswer": "fashion",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "fashionは2003年にKREVAがTypo GraphicsのKIOとCRIBのYOUGOとともに立ち上げたファッションブランド。"
  },
  {
    "FIELD1": 4,
@@ -38,6 +39,7 @@ const quizData = [
    "correctAnswer": "THE THREE",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "このユニットでMステにも出演している。"
  },
  {
    "FIELD1": 6,
@@ -54,6 +56,7 @@ const quizData = [
    "correctAnswer": "575",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "KREVAはかしゆかが好き" 
  },
  {
    "FIELD1": 8,
@@ -70,6 +73,7 @@ const quizData = [
    "correctAnswer": "Mr.Drunk;Mummy-D",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "トラックの元ネタはZulemaのI Love You Baby[YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
  },
  {
    "FIELD1": 10,
@@ -95,6 +99,7 @@ const quizData = [
    "correctAnswer": "さいたまスーパーアリーナ",
    "fields": "会場名",
    "difficulty": "hard"
+    "note": "2年連続さいたまスーパーアリーナでの開催だった。"
  },
  {
    "FIELD1": 13,
@@ -103,6 +108,7 @@ const quizData = [
    "choices": "monday night studio session;sunday night studio session;saturday night studio session;holiday night studio session",
    "correctAnswer": "monday night studio session",   
    "difficulty": "normal"
+   "note": "(有)エレメンツの自社スタジオ『monday night studio 大橋』の取り壊しに際してリリースされた作品。リリース記念で日比谷野外大音楽堂でのイベントも開催された。"
  },
  {
    "FIELD1": 14,
@@ -112,6 +118,7 @@ const quizData = [
    "fields": "答え",
    "difficulty": "hard",
    "tags": ["代表のみ"]
+   "note": "ベステンダンクは高野寛の曲。[YouTubeで聴く](https://youtu.be/MRpy0wmSqII?si=AOII1LufS1kKQwkB)"
  },
  {
    "FIELD1": 15,
@@ -128,6 +135,7 @@ const quizData = [
    "correctAnswer": "ルールなき世界のルールブック",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "発売を記念して新宿の福家書店で初のサイン会を行った。"
  },
  {
    "FIELD1": 17,
@@ -152,6 +160,7 @@ const quizData = [
    "correctAnswer": "PROPS",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "PVのDVDはKREVAのシングルCD『NA NA NA』の予約購入先着特典として付いてきた。"
  },
  {
    "FIELD1": 20,
@@ -160,6 +169,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "元ネタはTyrone Davis - I Got Carried Away[Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
  },
  {
    "FIELD1": 21,
@@ -168,6 +178,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "アルバム『よろしくお願いします』に収録。[Youtubeで聴く](https://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfbhttps://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfb)"
  },
  {
    "FIELD1": 22,
@@ -176,6 +187,7 @@ const quizData = [
    "correctAnswer": "東西南北脳内回想録",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "曲の冒頭でネームドロップしている。[Youtubeで聴く](https://youtu.be/Wlr3SIW0oU0?si=rAw88bsOIjnaoYrz)"
  },
  {
    "FIELD1": 23,
@@ -184,6 +196,7 @@ const quizData = [
    "correctAnswer": "ストロングスタイル",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "アルバム『よろしくお願いします』からシングルカットされた。[Youtubeで聴く](https://youtu.be/Ti_OzY5bKQ4?si=pcTXxlkpNlUZs1RB)"
  },
  {
    "FIELD1": 24,
@@ -192,6 +205,7 @@ const quizData = [
    "correctAnswer": "MIX / TAPE",
    "fields": "答え",
    "difficulty": "hard"
+   "note": "アルバムの一曲目でわずか11秒。[Youtubeで聴く](https://youtu.be/_ksUUKfSLAM?si=X3cenL721fUPujZc)"
  },
  {
    "FIELD1": 25,
