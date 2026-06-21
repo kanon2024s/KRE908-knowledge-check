@@ -516,13 +516,17 @@ useEffect(() => {
                     {note && (
                       <button
                         type="button"
-                        className="note-trigger"
+                        className={
+                          isNoteOpen
+                            ? "note-trigger note-trigger-open"
+                            : "note-trigger"
+                        }
                         aria-label="補足情報を見る"
                         onClick={() =>
                           setOpenNoteIndex(isNoteOpen ? null : index)
                         }
                       >
-                        💡
+                        💡 補足
                       </button>
                     )}
                   </p>
