@@ -405,3 +405,44 @@ button:focus-within {
     word-break: break-word;
   }
 }
+/* ==========================================================
+   ランキングの難易度タブ用スタイル
+   App.css の末尾に追記してください（順番はどこでもOKです）
+   ========================================================== */
+
+.ranking-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.ranking-tab-button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.ranking-tab-button:hover {
+  background-color: #f0e6f0;
+}
+
+/* 現在選ばれているタブを強調表示 */
+.ranking-tab-active {
+  background-color: #6c63b5;
+  border-color: #6c63b5;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .ranking-tab-button {
+    font-size: 0.85em;
+    padding: 6px 12px;
+  }
+}
