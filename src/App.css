@@ -682,17 +682,29 @@ button {
    App.css の末尾に追記してください。
    ========================================================== */
 
-/* 💡アイコンのボタン（クリックすると吹き出しが開く） */
+/* 「💡 補足」ボタン（クリックすると吹き出しが開く） */
 .note-trigger {
-  margin-left: 6px;
-  border: none;
-  background: none;
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  border: 1px solid #c9bce0;
+  background-color: #ece6f7;
+  color: #5c4f8a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 16px; /* 角丸でボタンらしい見た目にする */
   cursor: pointer;
-  padding: 0 2px;
+  padding: 3px 10px;
   vertical-align: middle;
+  white-space: nowrap;
   /* iOSでタップ時に変な色や枠が残らないようにしておく */
   -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .note-trigger:hover {
+    background-color: #ddd2f0;
+  }
 }
 
 .note-trigger:focus,
@@ -700,6 +712,13 @@ button {
 .note-trigger:active {
   outline: none;
   box-shadow: none;
+}
+
+/* 補足が開いている時は、ボタン自体の色を変えて「開いている」状態が分かるようにする */
+.note-trigger-open {
+  background-color: #6c63b5;
+  border-color: #6c63b5;
+  color: #fff;
 }
 
 /* 吹き出し本体 */
