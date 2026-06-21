@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchRanking } from "../supabaseHelpers";
+import { fetchRanking } from "./supabaseHelpers";
 
 const RankingPage = ({ onBack }) => {
   const [rankingList, setRankingList] = useState([]);
@@ -67,11 +67,11 @@ const RankingPage = ({ onBack }) => {
               <tbody>
                 {rankingList.map((entry, index) => (
                   <tr key={entry.id}>
-                    <td>{index + 1}</td>
-                    <td>{entry.name}</td>
-                    <td>{entry.score} / 10</td>
-                    <td>{difficultyLabel(entry.difficulty)}</td>
-                    <td>{formatDate(entry.created_at)}</td>
+                    <td data-label="順位">{index + 1}</td>
+                    <td data-label="名前">{entry.name}</td>
+                    <td data-label="点数">{entry.score} / 10</td>
+                    <td data-label="難易度">{difficultyLabel(entry.difficulty)}</td>
+                    <td data-label="日時">{formatDate(entry.created_at)}</td>
                   </tr>
                 ))}
               </tbody>
