@@ -266,7 +266,89 @@ button:focus-within {
   padding: 6px 12px !important;
 }
 
-styles-to-append.css
+/* ==========================================================
+   ここから下は、ランキング機能・プレイ回数記録機能のために追加したスタイルです。
+   既存の App.css の末尾にそのまま追記してください。
+   ========================================================== */
+
+/* トップページ：ランキングへのリンクボタン */
+.ranking-link-button {
+  margin-top: 12px;
+}
+
+/* スコア登録フォーム（結果画面） */
+.score-submit-form {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.score-submit-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.score-submit-row input {
+  flex: 1;
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.score-submit-done {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.score-submit-error {
+  color: #cd5c5c;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+/* ランキングページ */
+.ranking-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.ranking-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.ranking-table th,
+.ranking-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.ranking-table th {
+  background-color: #f5f5f5;
+}
+
+.ranking-error {
+  color: #cd5c5c;
+}
+
+.ranking-back-button {
+  display: block;
+  margin: 0 auto;
+}
 
 /* ==========================================================
    ランキングテーブルのスマホ対応スタイル
