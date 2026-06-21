@@ -458,3 +458,31 @@ button:focus-within {
   margin: 0 0 16px 0;
   line-height: 1.4;
 }
+
+/* ==========================================================
+   iOS(Safari/Chrome)でボタンに紫っぽい枠・ハイライトが
+   残ってしまう問題への対策。
+   App.css の末尾に追記してください。
+   ========================================================== */
+
+/* iOSのタップ時ハイライト（タップした瞬間に薄く色がつく機能）を完全に消す */
+.choice-button,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* :active（押している間の見た目）も統一して、変な残留を防ぐ */
+.choice-button:active {
+  background-color: #fff;
+  border-color: #ccc;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ユーザーがテキストを選択してしまい、長押しメニューが出るのを防ぐ
+   （誤操作によるハイライト残留の引き金になりやすいため） */
+.choice-button {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
