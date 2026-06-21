@@ -527,13 +527,25 @@ button {
    App.css の末尾に追記してください。
    ========================================================== */
 
-/* 1. choice-button の :hover による色変化は、紫の枠の原因にならないよう
-      ここでは何もしない（背景色だけ。枠線は一切つけない） */
-.choice-button:hover {
-  background-color: #f0e6f0;
-  border-color: #ccc; /* ホバーで枠の色が変わらないように明示的に固定する */
-  outline: none;
-  box-shadow: none;
+/* 1. choice-button の :hover は、マウスを持つ環境（PC）でのみ有効にする。
+      タッチ操作のデバイス（iOS含む）では :hover に意味がないにも関わらず
+      タップ後もその見た目が残ってしまうため、@media (hover: hover) で
+      「実際にマウスでホバーできる環境」だけに限定する。 */
+@media (hover: hover) and (pointer: fine) {
+  .choice-button:hover {
+    background-color: #f0e6f0;
+    border-color: #ccc;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+/* タッチ操作の環境（スマホ・タブレットなど）では hover の背景色を
+   一切つけない。selectedChoiceIndex による明示的な選択表示だけに任せる。 */
+@media (hover: none) {
+  .choice-button:hover {
+    background-color: #fff !important;
+  }
 }
 
 /* 2. フォーカス関連の見た目は完全に無効化する（紫の枠の発生源を断つ） */
@@ -545,6 +557,14 @@ button {
   box-shadow: none !important;
   border-color: #ccc !important;
   background-color: #fff !important;
+}
+
+/* タッチデバイスでは :active（押している間の見た目）の背景色も
+   確実に白に固定し、指を離した後に色が残らないようにする */
+@media (hover: none) {
+  .choice-button:active {
+    background-color: #fff !important;
+  }
 }
 
 /* 3. 「選択中」の紫の枠は、このクラスがついている時だけ表示する
