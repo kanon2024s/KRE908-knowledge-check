@@ -515,3 +515,42 @@ button {
     min-height: 130px; /* スマホは文字が折り返しやすいので少し広めに確保 */
   }
 }
+/* ==========================================================
+   選択肢の「選択中」表示を、CSSのhover/focusに依存せず、
+   React側のstate（selectedChoiceIndex）だけで完全に制御する。
+
+   iOSでは「タップ後のフォーカスやハイライトの見た目」が
+   画面の再描画後も残ってしまうことがあり、:hover や
+   :focus-visible だけでは確実に制御できないため、
+   ここで関連スタイルを上書き・無効化する。
+
+   App.css の末尾に追記してください。
+   ========================================================== */
+
+/* 1. choice-button の :hover による色変化は、紫の枠の原因にならないよう
+      ここでは何もしない（背景色だけ。枠線は一切つけない） */
+.choice-button:hover {
+  background-color: #f0e6f0;
+  border-color: #ccc; /* ホバーで枠の色が変わらないように明示的に固定する */
+  outline: none;
+  box-shadow: none;
+}
+
+/* 2. フォーカス関連の見た目は完全に無効化する（紫の枠の発生源を断つ） */
+.choice-button:focus,
+.choice-button:focus-visible,
+.choice-button:focus-within,
+.choice-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+  background-color: #fff !important;
+}
+
+/* 3. 「選択中」の紫の枠は、このクラスがついている時だけ表示する
+      （React の state でこのクラスのON/OFFを完全に制御する） */
+.choice-button-selected {
+  border-color: #6c63b5 !important;
+  background-color: #efeaf7 !important;
+  box-shadow: none !important;
+}
