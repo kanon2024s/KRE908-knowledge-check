@@ -38,7 +38,7 @@ const quizData = [
    "text": "KREVAが亀田誠治、布袋寅泰と組んだユニット名とは?",
    "correctAnswer": "THE THREE",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "このユニットでMステにも出演している。"
  },
  {
@@ -55,7 +55,7 @@ const quizData = [
    "text": "勝手にremixシリーズとしてPerfumeのある楽曲をKREVAがremixした事がある。<br />その曲とは何か",
    "correctAnswer": "575",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "KREVAはかしゆかが好き" 
  },
  {
@@ -64,7 +64,7 @@ const quizData = [
    "text": "揺さぶるブルーのトラックを作ったのは誰でしょう",
    "correctAnswer": "千晴",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
  },
  {
    "FIELD1": 9,
@@ -72,7 +72,7 @@ const quizData = [
    "text": "BY PHAR THE DOPESTの「安全運転」は誰がトラックを作っているでしょう",
    "correctAnswer": "Mr.Drunk;Mummy-D",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "トラックの元ネタはZulemaのI Love You Baby[YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
  },
  {
@@ -98,7 +98,7 @@ const quizData = [
    "text": "2013年2年目となる908FESが開催された会場はどこか",
    "correctAnswer": "さいたまスーパーアリーナ",
    "fields": "会場名",
-   "difficulty": "hard"
+   "difficulty": "hard",
     "note": "2年連続さいたまスーパーアリーナでの開催だった。"
  },
  {
@@ -107,7 +107,7 @@ const quizData = [
    "text": "2016年KREVAが所属していた事務所からリリースされたstudio tribute albumのアルバム名は何か",
    "choices": "monday night studio session;sunday night studio session;saturday night studio session;holiday night studio session",
    "correctAnswer": "monday night studio session",   
-   "difficulty": "normal"
+   "difficulty": "normal",
    "note": "(有)エレメンツの自社スタジオ『monday night studio 大橋』の取り壊しに際してリリースされた作品。リリース記念で日比谷野外大音楽堂でのイベントも開催された。"
  },
  {
@@ -117,7 +117,7 @@ const quizData = [
    "correctAnswer": "ベステンダンク;べステンダンク",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
    "note": "ベステンダンクは高野寛の曲。[YouTubeで聴く](https://youtu.be/MRpy0wmSqII?si=AOII1LufS1kKQwkB)"
  },
  {
@@ -134,7 +134,7 @@ const quizData = [
    "text": "2011年に幻冬舎から刊行されたKREVAの初著書といえばKREAM(クリーム)<br />ですがそれに続くタイトルとはなんでしょう",
    "correctAnswer": "ルールなき世界のルールブック",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "発売を記念して新宿の福家書店で初のサイン会を行った。"
  },
  {
@@ -159,7 +159,7 @@ const quizData = [
    "text": "RomancrewのALI-KICKがPVの監督を務めているKREVAのある楽曲とは何か",
    "correctAnswer": "PROPS",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "PVのDVDはKREVAのシングルCD『NA NA NA』の予約購入先着特典として付いてきた。"
  },
  {
@@ -168,7 +168,7 @@ const quizData = [
    "text": "久保田利伸 meets KREVAとしてリリースした楽曲「M☆A☆G☆I☆C」はサンプリング手法でビートが作成されている。<br />KREVAのソロ曲でも元ネタが同じ曲が存在しているがそれは何という曲か?",
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "元ネタはTyrone Davis - I Got Carried Away[Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
  },
  {
@@ -177,7 +177,7 @@ const quizData = [
    "text": "バースが始まる前にKREVAが1番、2番と教えてくれる曲は何でしょう",
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "アルバム『よろしくお願いします』に収録。[Youtubeで聴く](https://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfbhttps://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfb)"
  },
  {
@@ -186,7 +186,7 @@ const quizData = [
    "text": "KREVAのアルバム「よろしくお願いします」<br />の中でDJ TATSUTAがプロデュースしている曲はどれでしょう",
    "correctAnswer": "東西南北脳内回想録",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "曲の冒頭でネームドロップしている。[Youtubeで聴く](https://youtu.be/Wlr3SIW0oU0?si=rAw88bsOIjnaoYrz)"
  },
  {
@@ -195,7 +195,7 @@ const quizData = [
    "text": "映画ローグアサシンの日本版主題歌に使われているKREVAの楽曲は何?",
    "correctAnswer": "ストロングスタイル",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "アルバム『よろしくお願いします』からシングルカットされた。[Youtubeで聴く](https://youtu.be/Ti_OzY5bKQ4?si=pcTXxlkpNlUZs1RB)"
  },
  {
@@ -204,7 +204,7 @@ const quizData = [
    "text": "KREVAが今までリリースしたフルアルバムに収録されている曲で一番時間の短い曲は何?",
    "correctAnswer": "MIX / TAPE",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "アルバムの一曲目でわずか11秒。[Youtubeで聴く](https://youtu.be/_ksUUKfSLAM?si=X3cenL721fUPujZc)"
  },
  {
