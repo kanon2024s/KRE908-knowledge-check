@@ -366,6 +366,47 @@ useEffect(() => {
     return answer || "";
   };
 
+  // 補足情報（note）の中に [表示したい文字](URL) という書き方があれば、
+  // クリックできるリンクとして表示できるようにHTMLに変換する。
+  // 例: "詳しくは[こちら](https://example.com)を見てね"
+  //     → 「こちら」の部分だけがリンクになった文章として表示される。
+  const renderNoteWithLinks = (noteText) => {
+    if (!noteText) return null;
+
+    const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+    let keyIndex = 0;
+
+    while ((match = linkPattern.exec(noteText)) !== null) {
+      // リンクの前にある、ふつうの文章部分
+      if (match.index > lastIndex) {
+        parts.push(noteText.slice(lastIndex, match.index));
+      }
+      const [, linkLabel, linkUrl] = match;
+      parts.push(
+        <a
+          key={`note-link-${keyIndex++}`}
+          href={linkUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="note-link"
+        >
+          {linkLabel}
+        </a>
+      );
+      lastIndex = match.index + match[0].length;
+    }
+
+    // 最後のリンクより後ろに残っている、ふつうの文章部分
+    if (lastIndex < noteText.length) {
+      parts.push(noteText.slice(lastIndex));
+    }
+
+    return parts;
+  };
+
   return (
     <div className="quiz-container">
       {page === "top" && (
@@ -487,7 +528,9 @@ useEffect(() => {
                   </p>
 
                   {note && isNoteOpen && (
-                    <div className="note-bubble">{note}</div>
+                    <div className="note-bubble">
+                      {renderNoteWithLinks(note)}
+                    </div>
                   )}
 
                   <p>
