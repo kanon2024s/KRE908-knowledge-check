@@ -232,7 +232,7 @@ useEffect(() => {
  const renderChoices = (choices) =>
     choices.split(";").map((choice, index) => (
       <button
-        key={`${currentQuestionIndex}-${index}`}
+        key={`q${currentQuestionIndex}-c${index}-${choice}`}
         tabIndex={-1}
         onClick={() => {
           setSelectedChoiceIndex(index); // ← クリックされた瞬間にReactのstateとして記録する
@@ -350,9 +350,9 @@ useEffect(() => {
     value={selectedDifficulty}
     onChange={(e) => setSelectedDifficulty(e.target.value)}
   >
-    <option value="all">すべて(4択問題と記述式がまぜまぜ)</option>
+    <option value="all">すべて(4択と直接入力がまぜまぜ)</option>
     <option value="easy">簡単(まだ問題が無いよ)</option>
-    <option value="normal">普通(4択問題から挑戦)</option>
+    <option value="normal">普通(4択で挑戦)</option>
     <option value="hard">難しい(答えを直接入力して挑戦)</option>
   </select>
     </div>
@@ -387,7 +387,7 @@ useEffect(() => {
               {(timeLeft % 60).toString().padStart(2, "0")}
             </div>
             {currentQuestion.type === "choice" ? (
-              <div>{renderChoices(currentQuestion.choices)}</div>
+              <div key={`choices-wrapper-${currentQuestionIndex}`}>{renderChoices(currentQuestion.choices)}</div>
             ) : (
               <div>{renderTextFields()}</div>
             )}
