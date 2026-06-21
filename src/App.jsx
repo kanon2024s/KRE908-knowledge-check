@@ -215,16 +215,18 @@ useEffect(() => {
 
     const nextIndex = currentQuestionIndex + 1;
 
-    // ✅ モバイル誤タップ対策として100ms待ってから画面を切り替える
-    setTimeout(() => {
-      if (nextIndex < shuffledQuestions.length) {
-        setCurrentQuestionIndex(nextIndex);
-      } else {
-        setShowResult(true);
-        setTimerActive(false);
-        setPage("result");
-      }
-    }, 100);
+    // 選択状態のリセットと画面の切り替えを、間に遅延を挟まず同時に行う。
+    // setTimeoutで間を空けると、その間にiOS側のタップ時の見た目の記憶が
+    // 次の問題の同じ位置の要素に引き継がれてしまうため、遅延をやめて
+    // 即座に切り替えることでズレが発生する余地を無くす。
+    setSelectedChoiceIndex(null);
+    if (nextIndex < shuffledQuestions.length) {
+      setCurrentQuestionIndex(nextIndex);
+    } else {
+      setShowResult(true);
+      setTimerActive(false);
+      setPage("result");
+    }
   };
 
  const renderChoices = (choices) =>
@@ -348,9 +350,9 @@ useEffect(() => {
     value={selectedDifficulty}
     onChange={(e) => setSelectedDifficulty(e.target.value)}
   >
-    <option value="all">すべて(4択と直接入力がまぜまぜ)</option>
+    <option value="all">すべて(4択問題と記述式がまぜまぜ)</option>
     <option value="easy">簡単(まだ問題が無いよ)</option>
-    <option value="normal">普通(4択問題で挑戦)</option>
+    <option value="normal">普通(4択問題から挑戦)</option>
     <option value="hard">難しい(答えを直接入力して挑戦)</option>
   </select>
     </div>
