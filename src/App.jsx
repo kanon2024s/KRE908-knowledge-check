@@ -223,7 +223,7 @@ useEffect(() => {
  const renderChoices = (choices) =>
     choices.split(";").map((choice, index) => (
       <button
-        key={index}
+        key={`${currentQuestionIndex}-${index}`} // ← 問題が変わるごとに全く新しい要素として扱われるようにする
         tabIndex={-1} // ←これを追加
         onClick={() =>
           handleAnswer(
@@ -334,10 +334,10 @@ useEffect(() => {
     value={selectedDifficulty}
     onChange={(e) => setSelectedDifficulty(e.target.value)}
   >
-    <option value="all">すべて(4択と記述式がまぜまぜ)</option>
+    <option value="all">すべて</option>
     <option value="easy">簡単(まだ問題が無いよ)</option>
-    <option value="normal">普通(4択で挑戦)</option>
-    <option value="hard">難しい(答えを直接入力して挑戦)</option>
+    <option value="normal">普通(これでも難しいかも)</option>
+    <option value="hard">難しい</option>
   </select>
     </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
