@@ -736,3 +736,14 @@ button {
   border-style: solid;
   border-color: transparent transparent #fff8e1 transparent;
 }
+
+/* 吹き出し内のリンク文字の見た目 */
+.note-link {
+  color: #6c63b5;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.note-link:hover {
+  color: #564f93;
+}
