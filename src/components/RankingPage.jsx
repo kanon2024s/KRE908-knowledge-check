@@ -70,6 +70,12 @@ const RankingPage = ({ onBack }) => {
         ))}
       </div>
 
+      {selectedTab === "all" && (
+        <p className="ranking-note">
+          ※「すべて」は普通・難しいの問題がランダムに混ざって出題されたプレイの記録です。
+        </p>
+      )}
+
       {loading && <p>読み込み中...</p>}
       {!loading && errorMsg && <p className="ranking-error">{errorMsg}</p>}
 
