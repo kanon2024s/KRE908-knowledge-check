@@ -574,3 +574,78 @@ button {
   background-color: #efeaf7 !important;
   box-shadow: none !important;
 }
+/* ==========================================================
+   トップページ「最新情報」セクション用スタイル
+   App.css の末尾に追記してください。
+   ========================================================== */
+
+.news-section {
+  margin-top: 28px;
+  width: 100%;
+  max-width: 420px;
+  background-color: #f3f0f7;
+  border: 1px solid #d8cfe8;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-sizing: border-box;
+}
+
+.news-title {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 160px; /* 件数が増えても枠の高さを保ち、内側でスクロールできるようにする */
+  overflow-y: auto;
+  text-align: left;
+}
+
+.news-item {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid #e3dcee;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  flex-shrink: 0;
+  color: #6c63b5;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.news-text {
+  color: #444;
+}
+
+/* トップページ自体に大事な追記：
+   元々 .top-page は overflow が制御された画面いっぱいのレイアウトなので、
+   お知らせが増えてもボタン類が画面からあふれないよう、
+   トップページ全体を縦スクロール可能にしておく。 */
+.top-page {
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .news-section {
+    max-width: 90%;
+    padding: 12px 14px;
+  }
+
+  .news-item {
+    font-size: 0.8rem;
+  }
+}
