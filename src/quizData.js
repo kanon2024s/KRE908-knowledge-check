@@ -73,7 +73,7 @@ const quizData = [
    "correctAnswer": "Mr.Drunk;Mummy-D",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "トラックの元ネタはZulemaのI Love You Baby[YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
+   "note": "トラックの元ネタはZulemaのI Love You Baby [YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
  },
  {
    "FIELD1": 10,
@@ -169,7 +169,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "元ネタはTyrone Davis - I Got Carried Away[Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
+   "note": "元ネタはTyrone Davis - I Got Carried Away [Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
  },
  {
    "FIELD1": 21,
