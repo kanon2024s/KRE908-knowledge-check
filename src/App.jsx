@@ -69,6 +69,7 @@ function App() {
     shuffleArray(quizData).slice(0, 10)
   );
   const [inputValues, setInputValues] = useState([]);
+  const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(null); // ← 今選ばれている選択肢の番号（iOSのフォーカス残留対策）
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
@@ -123,6 +124,12 @@ function App() {
 
 useEffect(() => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}, [currentQuestionIndex]);
+
+useEffect(() => {
+  // 問題が切り替わるたびに「選んだ選択肢」の状態を必ずリセットする
+  // （iOSでボタンの見た目がそのまま残ってしまう現象を防ぐための明示的な初期化）
+  setSelectedChoiceIndex(null);
 }, [currentQuestionIndex]);
 
   useEffect(() => {
@@ -223,15 +230,22 @@ useEffect(() => {
  const renderChoices = (choices) =>
     choices.split(";").map((choice, index) => (
       <button
-        key={`${currentQuestionIndex}-${index}`} // ← 問題が変わるごとに全く新しい要素として扱われるようにする
-        tabIndex={-1} // ←これを追加
-        onClick={() =>
+        key={`${currentQuestionIndex}-${index}`}
+        tabIndex={-1}
+        onClick={() => {
+          setSelectedChoiceIndex(index); // ← クリックされた瞬間にReactのstateとして記録する
           handleAnswer(
             choice.trim() === currentQuestion.correctAnswer.trim(),
             choice
-          )
+          );
+        }}
+        // 紫の枠は CSS の :hover や :focus に頼らず、
+        // 「selectedChoiceIndex と一致しているかどうか」だけで判定する
+        className={
+          selectedChoiceIndex === index
+            ? "choice-button choice-button-selected"
+            : "choice-button"
         }
-        className="choice-button"
       >
         {choice}
       </button>
