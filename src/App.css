@@ -486,3 +486,32 @@ button {
   user-select: none;
   -webkit-touch-callout: none;
 }
+
+/* ==========================================================
+   問題文エリアの高さを固定する対策。
+   問題文の長さによって選択肢の表示位置がズレることで、
+   iOSのタップハイライトが次の問題の違う選択肢に
+   残って見えてしまう問題への対処です。
+   App.css の末尾に追記してください。
+
+   ※ もし見た目（余白）が気に入らない場合は、
+     このブロックをまるごと削除すれば元の挙動に戻せます。
+   ========================================================== */
+
+.question-progress {
+  min-height: 110px; /* 問題文がだいたい3行分になっても収まる高さの目安 */
+  display: flex;
+  align-items: center; /* 短い問題文は縦方向の中央に配置 */
+  justify-content: center;
+}
+
+.question-progress h2 {
+  margin: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .question-progress {
+    min-height: 130px; /* スマホは文字が折り返しやすいので少し広めに確保 */
+  }
+}
