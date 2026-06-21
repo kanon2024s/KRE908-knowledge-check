@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { fetchRanking } from "../supabaseHelpers";
 
+// タブに表示する難易度の一覧（値とラベルのセット）
+const DIFFICULTY_TABS = [
+  { value: "all", label: "すべて" },
+  { value: "easy", label: "簡単" },
+  { value: "normal", label: "普通" },
+  { value: "hard", label: "難しい" },
+];
+
 const RankingPage = ({ onBack }) => {
+  const [selectedTab, setSelectedTab] = useState("all");
   const [rankingList, setRankingList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
@@ -9,9 +18,10 @@ const RankingPage = ({ onBack }) => {
   useEffect(() => {
     const loadRanking = async () => {
       setLoading(true);
-      const { success, data, error } = await fetchRanking(20);
+      const { success, data, error } = await fetchRanking(20, selectedTab);
       if (success) {
         setRankingList(data);
+        setErrorMsg("");
       } else {
         setErrorMsg("ランキングの取得に失敗しました。");
         console.error(error);
@@ -19,7 +29,7 @@ const RankingPage = ({ onBack }) => {
       setLoading(false);
     };
     loadRanking();
-  }, []);
+  }, [selectedTab]); // ← 選んでいるタブが変わるたびに、その難易度のデータを取り直す
 
   const difficultyLabel = (difficulty) => {
     switch (difficulty) {
@@ -45,6 +55,20 @@ const RankingPage = ({ onBack }) => {
   return (
     <div className="ranking-page">
       <h2 className="ranking-title">ランキング</h2>
+
+      <div className="ranking-tabs">
+        {DIFFICULTY_TABS.map((tab) => (
+          <button
+            key={tab.value}
+            className={`ranking-tab-button ${
+              selectedTab === tab.value ? "ranking-tab-active" : ""
+            }`}
+            onClick={() => setSelectedTab(tab.value)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
 
       {loading && <p>読み込み中...</p>}
       {!loading && errorMsg && <p className="ranking-error">{errorMsg}</p>}
