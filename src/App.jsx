@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import quizData from "./quizData";
+import newsData from "./newsData";
 import RankingPage from "./components/RankingPage";
 import ScoreSubmitForm from "./components/ScoreSubmitForm";
 import { recordPlayLog } from "./supabaseHelpers";
@@ -374,6 +375,22 @@ useEffect(() => {
           <button className="ranking-link-button" onClick={() => setPage("ranking")}>
             ランキングを見る
           </button>
+
+          <div className="news-section">
+            <h3 className="news-title">最新情報</h3>
+            <ul className="news-list">
+              {newsData.map((item, index) => (
+                <li key={index} className="news-item">
+                  <span className="news-date">
+                    {new Date(item.date).getFullYear()}/
+                    {new Date(item.date).getMonth() + 1}/
+                    {new Date(item.date).getDate()}
+                  </span>
+                  <span className="news-text">{item.text}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
 
