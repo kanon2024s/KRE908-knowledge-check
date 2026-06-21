@@ -73,6 +73,7 @@ function App() {
   const [inputValues, setInputValues] = useState([]);
   const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(null); // ← 今選ばれている選択肢の番号（iOSのフォーカス残留対策）
   const choiceButtonRefs = useRef([]); // ← 各選択肢ボタンのDOM要素を直接保持する（iOS対策の最終手段）
+  const [openNoteIndex, setOpenNoteIndex] = useState(null); // ← 結果画面で、今どの問題の補足（吹き出し）が開いているか
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
@@ -462,6 +463,8 @@ useEffect(() => {
               const representativeAnswer = correctAnswers[0];
               const tags = shuffledQuestions[index]?.tags || [];
               const showOnlyRepresentative = tags.includes("代表のみ");
+              const note = shuffledQuestions[index]?.note; // ← この問題に補足情報があれば取得する
+              const isNoteOpen = openNoteIndex === index;
 
               return (
                 <li key={index}>
@@ -469,7 +472,24 @@ useEffect(() => {
                     <strong dangerouslySetInnerHTML={{ 
                       __html: `Q.${index === 9 ? "9.8" : index + 1}: ${answer.question}` 
                     }} />
+                    {note && (
+                      <button
+                        type="button"
+                        className="note-trigger"
+                        aria-label="補足情報を見る"
+                        onClick={() =>
+                          setOpenNoteIndex(isNoteOpen ? null : index)
+                        }
+                      >
+                        💡
+                      </button>
+                    )}
                   </p>
+
+                  {note && isNoteOpen && (
+                    <div className="note-bubble">{note}</div>
+                  )}
+
                   <p>
                     あなたの回答: <strong>{answer.yourAnswer}</strong>
                   </p>
