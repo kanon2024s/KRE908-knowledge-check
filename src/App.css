@@ -649,3 +649,31 @@ button {
     font-size: 0.8rem;
   }
 }
+/* ==========================================================
+   スマホでトップページが縦に長くなりすぎて、
+   「最新情報」が画面下に追いやられてしまう問題への対策。
+   App.css の末尾に追記してください。
+   ========================================================== */
+
+@media (max-width: 600px) {
+  .top-page {
+    padding-top: 24px; /* PCでは80pxだったが、スマホでは大きく減らす */
+  }
+
+  .top-page h1 {
+    font-size: 1.6rem; /* タイトルの文字サイズを縮めて高さを詰める */
+    margin-bottom: 12px;
+  }
+
+  .difficulty-select {
+    margin-bottom: 4px;
+  }
+
+  .top-page button {
+    margin-top: 12px; /* ボタン同士の間隔も少し詰める */
+  }
+
+  .news-section {
+    margin-top: 16px;
+  }
+}
