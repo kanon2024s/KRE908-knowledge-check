@@ -1110,6 +1110,22 @@ const quizData = [
    "choices": "Raf Simons;KRIS VAN ASSCHE;Dries Van Noten;DIRK BIKKEMBERGS",
    "correctAnswer": "KRIS VAN ASSCHE",
    "difficulty": "medium"
-}
+},
+{
+   "FIELD1": 138,
+   "type": "choice",
+   "text": "KREVAのソロ活動20周年を記念した企画展示「ラッパーと紙とペン」にて行われた今までにない取り組みとは？",
+   "choices": "最終日にサプライズで登場;リリックの原書をオークション形式で販売;初日にサプライズで登場し音色を披露;ＫＲＥＶＡが使用したペンの販売",
+   "correctAnswer": "リリックの原書をオークション形式で販売",
+   "difficulty": "medium"
+ },
+ {
+   "FIELD1": 139,
+   "type": "choice",
+   "text": "「BEST OF MIXCD NO.3」販売記念として開催されたサイン会では総勢何名へのサイン対応となったか？",
+   "choices": "350人;650人;908人;500人",
+   "correctAnswer": "650人",
+   "difficulty": "medium"
+ }
 ]
     export default quizData;
