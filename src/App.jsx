@@ -334,10 +334,10 @@ useEffect(() => {
     value={selectedDifficulty}
     onChange={(e) => setSelectedDifficulty(e.target.value)}
   >
-    <option value="all">すべて</option>
+    <option value="all">すべて(4択と直接入力がまぜまぜ)</option>
     <option value="easy">簡単(まだ問題が無いよ)</option>
-    <option value="normal">普通(これでも難しいかも)</option>
-    <option value="hard">難しい</option>
+    <option value="normal">普通(4択問題で挑戦)</option>
+    <option value="hard">難しい(答えを直接入力して挑戦)</option>
   </select>
     </div>
           <button onClick={() => setPage("quiz")}>スタート</button>
