@@ -267,3 +267,59 @@ button:focus-within {
 }
 
 styles-to-append.css
+
+/* ==========================================================
+   ランキングテーブルのスマホ対応スタイル
+   既存の .ranking-table の定義の後ろに追記してください
+   （styles-to-append.css に元々あった .ranking-table の
+     スタイルは残したまま、これを「さらに追記」する形でOKです）
+   ========================================================== */
+
+/* 画面幅が600px以下（主にスマホ）の場合にテーブルをカード風に変える */
+@media (max-width: 600px) {
+  .ranking-table {
+    border: none;
+  }
+
+  /* ヘッダー行（順位・名前・点数...の行）は非表示にする */
+  .ranking-table thead {
+    display: none;
+  }
+
+  .ranking-table tr {
+    display: block;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 12px;
+    background-color: #fff;
+  }
+
+  .ranking-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+    padding: 6px 0;
+    font-size: 0.95em;
+  }
+
+  .ranking-table td:last-child {
+    border-bottom: none;
+  }
+
+  /* data-label属性の値を、セルの左側にラベルとして表示する */
+  .ranking-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    padding-right: 12px;
+  }
+
+  /* 名前は折り返しを許可し、長くても崩れないようにする */
+  .ranking-table td[data-label="名前"] {
+    word-break: break-word;
+  }
+}
