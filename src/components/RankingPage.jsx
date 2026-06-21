@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { fetchRanking } from "./supabaseHelpers";
+import { fetchRanking } from "../supabaseHelpers";
 
 const RankingPage = ({ onBack }) => {
   const [rankingList, setRankingList] = useState([]);
