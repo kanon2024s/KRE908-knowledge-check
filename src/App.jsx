@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import quizData from "./quizData";
 import RankingPage from "./components/RankingPage";
@@ -70,6 +70,7 @@ function App() {
   );
   const [inputValues, setInputValues] = useState([]);
   const [selectedChoiceIndex, setSelectedChoiceIndex] = useState(null); // ← 今選ばれている選択肢の番号（iOSのフォーカス残留対策）
+  const choiceButtonRefs = useRef([]); // ← 各選択肢ボタンのDOM要素を直接保持する（iOS対策の最終手段）
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
@@ -130,6 +131,18 @@ useEffect(() => {
   // 問題が切り替わるたびに「選んだ選択肢」の状態を必ずリセットする
   // （iOSでボタンの見た目がそのまま残ってしまう現象を防ぐための明示的な初期化）
   setSelectedChoiceIndex(null);
+
+  // ↓最終手段：Reactのstateだけでなく、DOM要素そのものに対して
+  // 直接 blur() / 強制的な状態リセットを試みる。
+  // iOSでは要素の「視覚的なアクティブ状態」がReactのstateとは
+  // 独立してDOM要素自身に残ることがあるため、要素を直接操作する。
+  requestAnimationFrame(() => {
+    choiceButtonRefs.current.forEach((btn) => {
+      if (btn) {
+        btn.blur();
+      }
+    });
+  });
 }, [currentQuestionIndex]);
 
   useEffect(() => {
@@ -233,6 +246,7 @@ useEffect(() => {
     choices.split(";").map((choice, index) => (
       <button
         key={`q${currentQuestionIndex}-c${index}-${choice}`}
+        ref={(el) => (choiceButtonRefs.current[index] = el)} // ← このボタン自身のDOM要素を保持する
         tabIndex={-1}
         onClick={() => {
           setSelectedChoiceIndex(index); // ← クリックされた瞬間にReactのstateとして記録する
