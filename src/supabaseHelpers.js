@@ -47,10 +47,29 @@ export const fetchRanking = async (limit = 20, difficulty = "all") => {
 };
 
 /**
- * プレイ開始のログを1件記録する（プレイ回数カウント用）
+ * プレイ1回分のログを記録する（プレイ回数カウント＋集計用）。
+ * クイズが終わった（結果画面に着いた）タイミングで呼ぶことを想定している。
+ * @param {object} params
+ * @param {string} params.anonymousId - このブラウザの匿名ID
+ * @param {number} params.score - 得点（0〜10）
+ * @param {string} params.difficulty - 難易度（all / easy / normal / hard）
+ * @param {string[]} params.wrongQuestions - 間違えた問題文の配列
  */
-export const recordPlayLog = async () => {
-  const { error } = await supabase.from("play_logs").insert([{}]);
+export const recordPlayLog = async ({
+  anonymousId = null,
+  score = null,
+  difficulty = null,
+  wrongQuestions = [],
+} = {}) => {
+  const { error } = await supabase.from("play_logs").insert([
+    {
+      anonymous_id: anonymousId,
+      score,
+      difficulty,
+      // 「;」で連結して1つのテキストとして保存する（quizData.jsの選択肢の区切り方に合わせている）
+      wrong_questions: wrongQuestions.join(";"),
+    },
+  ]);
 
   if (error) {
     console.error("プレイログ記録エラー:", error.message);
