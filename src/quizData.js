@@ -21,7 +21,7 @@ const quizData = [
    "text": "ファンキーグラマラスのPVでCUE ZEROが被っているのは何というブランドの帽子か?",
    "correctAnswer": "fashion",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
    "note": "fashionは2003年にKREVAがTypo GraphicsのKIOとCRIBのYOUGOとともに立ち上げたファッションブランド。"
  },
  {
