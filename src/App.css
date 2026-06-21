@@ -677,3 +677,62 @@ button {
     margin-top: 16px;
   }
 }
+/* ==========================================================
+   結果画面の「補足情報（プチ情報）」吹き出し用スタイル
+   App.css の末尾に追記してください。
+   ========================================================== */
+
+/* 💡アイコンのボタン（クリックすると吹き出しが開く） */
+.note-trigger {
+  margin-left: 6px;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0 2px;
+  vertical-align: middle;
+  /* iOSでタップ時に変な色や枠が残らないようにしておく */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.note-trigger:focus,
+.note-trigger:focus-visible,
+.note-trigger:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* 吹き出し本体 */
+.note-bubble {
+  position: relative;
+  background-color: #fff8e1;
+  border: 1px solid #f0d98c;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 6px 0 10px 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #5c4a1a;
+  text-align: left;
+  /* 吹き出しの「つの」 */
+}
+
+.note-bubble::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 18px;
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent #f0d98c transparent;
+}
+
+.note-bubble::after {
+  content: "";
+  position: absolute;
+  top: -6.5px;
+  left: 19px;
+  border-width: 0 7px 7px 7px;
+  border-style: solid;
+  border-color: transparent transparent #fff8e1 transparent;
+}
