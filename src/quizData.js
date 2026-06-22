@@ -42,14 +42,6 @@ const quizData = [
    "note": "このユニットでMステにも出演している。"
  },
  {
-   "FIELD1": 6,
-   "type": "text",
-   "text": "2021年に出演した日テレのmusic bloodにてKREVAが久保田利伸のある曲をカバーした。<br />その曲名は?",
-   "correctAnswer": "missing",
-   "fields": "答え",
-   "difficulty": "hard"
- },
- {
    "FIELD1": 7,
    "type": "text",
    "text": "勝手にremixシリーズとしてPerfumeのある楽曲をKREVAがremixした事がある。<br />その曲とは何か",
@@ -65,7 +57,7 @@ const quizData = [
    "correctAnswer": "千晴",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "[Youtubeで聴く](https://music.youtube.com/watch?v=AshJgfRgeQU&si=R9As27e9NsWdxcQd)"
+   "note": "[Youtubeで揺さぶるブルーを聴く](https://music.youtube.com/watch?v=AshJgfRgeQU&si=R9As27e9NsWdxcQd)"
  },
  {
    "FIELD1": 9,
@@ -74,7 +66,7 @@ const quizData = [
    "correctAnswer": "Mr.Drunk;Mummy-D",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "トラックの元ネタはZulemaのI Love You Baby [YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
+   "note": "トラックの元ネタはZulemaのI Love You Baby [YouTubeで元ネタを聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
  },
  {
    "FIELD1": 11,
@@ -82,7 +74,8 @@ const quizData = [
    "text": "KREVAの楽曲「挑め」ではあるテーマに沿ってリリックが書かれている。<br />そのテーマとは決して〇と言わないことである。〇に入るのは何か?",
    "correctAnswer": "3",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "カップリングにはサプライズでLITTLEとMCUが参加しており、7年ぶりに楽曲上で活動休止中のKICK THE CAN CREWが揃った。[Youtubeで挑めを聴く](https://music.youtube.com/playlist?list=OLAK5uy_kAI8LTu4EfiF1G16X8p6asiwv_HZzuJfg&si=KN3DOSjEQ0BkXEh5)[Youtubeで挑めRemixを聴く](https://music.youtube.com/watch?v=_qz4tph5SVQ&si=-jPZFk8fnZr30rvh)"
  },
  {
    "FIELD1": 12,
@@ -110,7 +103,7 @@ const quizData = [
    "fields": "答え",
    "difficulty": "hard",
    "tags": ["代表のみ"],
-   "note": "ベステンダンクは高野寛の曲。[YouTubeで聴く](https://youtu.be/MRpy0wmSqII?si=AOII1LufS1kKQwkB)"
+   "note": "ベステンダンクは高野寛の曲。[YouTubeで原曲を聴く](https://youtu.be/MRpy0wmSqII?si=AOII1LufS1kKQwkB)[YoutubeでKREVAカバーを聴く](https://music.youtube.com/watch?v=mScqscwdkK8&si=a-ORsKzVW43o-_AK)"
  },
  {
    "FIELD1": 15,
@@ -118,7 +111,8 @@ const quizData = [
    "text": "アルバムProjectKでは客演が0人であるがその他にもう1枚客演が0人のアルバムがある。<br />それはどのアルバムか<br />(なおベスト盤や、録りなおし、ミニアルバムは含まない)",
    "correctAnswer": "SPACE",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "[ディスコグラフィ](https://kreva.club/discography/3745/)"
  },
  {
    "FIELD1": 16,
@@ -161,7 +155,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "元ネタはTyrone DavisのI Got Carried Away [Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
+   "note": "元ネタはTyrone DavisのI Got Carried Away [Youtubeで元ネタを聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)[YoutubeでM☆A☆G☆I☆Cを聴く](https://music.youtube.com/watch?v=9whrAmqUYWE&si=FdgP5b4OG9RB40QV)"
  },
  {
    "FIELD1": 21,
@@ -170,7 +164,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "アルバム『よろしくお願いします』に収録。[Youtubeで聴く](https://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfbhttps://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfb)"
+   "note": "アルバム『よろしくお願いします』に収録。[Youtubeでため息はCO2を聴く](https://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfbhttps://youtu.be/yk0Cfn0BCkQ?si=q180GEkEBj8RJhfb)"
  },
  {
    "FIELD1": 22,
@@ -179,7 +173,7 @@ const quizData = [
    "correctAnswer": "東西南北脳内回想録",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "曲の冒頭でネームドロップしている。[Youtubeで聴く](https://youtu.be/Wlr3SIW0oU0?si=rAw88bsOIjnaoYrz)"
+   "note": "曲の冒頭でネームドロップしている。[Youtubeで東西南北脳内回想録を聴く](https://youtu.be/Wlr3SIW0oU0?si=rAw88bsOIjnaoYrz)"
  },
  {
    "FIELD1": 23,
@@ -188,7 +182,7 @@ const quizData = [
    "correctAnswer": "ストロングスタイル",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "アルバム『よろしくお願いします』からシングルカットされた。[Youtubeで聴く](https://youtu.be/Ti_OzY5bKQ4?si=pcTXxlkpNlUZs1RB)"
+   "note": "アルバム『よろしくお願いします』からシングルカットされた。[Youtubeでストロングスタイルを聴く](https://youtu.be/Ti_OzY5bKQ4?si=pcTXxlkpNlUZs1RB)"
  },
  {
    "FIELD1": 24,
@@ -197,7 +191,7 @@ const quizData = [
    "correctAnswer": "MIX / TAPE",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "アルバムの一曲目でわずか11秒。[Youtubeで聴く](https://youtu.be/_ksUUKfSLAM?si=X3cenL721fUPujZc)"
+   "note": "アルバムの一曲目でわずか11秒。[YoutubeでMIX / TAPEを聴く](https://youtu.be/_ksUUKfSLAM?si=X3cenL721fUPujZc)"
  },
  {
    "FIELD1": 25,
@@ -206,7 +200,7 @@ const quizData = [
    "correctAnswer": "もう逢いたくて",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "アルバム『嘘と煩悩 (煩悩盤)＜完全生産限定盤＞』の特典CD(ラジオCD“FM908”)にて語られた。[Youtubeで聴く](https://music.youtube.com/watch?v=a-h0qtbOvpc&si=z1xGfhN_ApSpODJD)"
+   "note": "アルバム『嘘と煩悩 (煩悩盤)＜完全生産限定盤＞』の特典CD(ラジオCD“FM908”)にて語られた。[Youtubeでもう逢いたくてを聴く](https://music.youtube.com/watch?v=a-h0qtbOvpc&si=z1xGfhN_ApSpODJD)"
  },
  {
    "FIELD1": 26,
@@ -215,7 +209,7 @@ const quizData = [
    "correctAnswer": "FRESH MODE",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "ライブでは『音色』を歌唱する際、終盤でこのリリックを引用することが多い。[Youtubeで聴く](https://music.youtube.com/watch?v=L1A-6MqOqxY&si=gGEc4XP15SjLxR7f)"
+   "note": "ライブでは『音色』を歌唱する際、終盤でこのリリックを引用することが多い。[YoutubeでFRESH MODEを聴く](https://music.youtube.com/watch?v=L1A-6MqOqxY&si=gGEc4XP15SjLxR7f)"
  },
  {
    "FIELD1": 27,
@@ -224,7 +218,7 @@ const quizData = [
    "correctAnswer": "終わりたくないオーワラナイ",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "[Youtubeで聴く](https://music.youtube.com/watch?v=mpiSVsP3mko&si=bq-XqHiPKWTDQYVS)"
+   "note": "[Youtubeで終わりたくないオーワラナイを聴く](https://music.youtube.com/watch?v=mpiSVsP3mko&si=bq-XqHiPKWTDQYVS)"
  },
  {
    "FIELD1": 28,
@@ -233,7 +227,7 @@ const quizData = [
    "correctAnswer": "ストレスFREE",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "千晴の楽曲『無礼KING(feat.KREVA)』でもストレスFREEというリリックが使われている。[Youtubeで聴く](https://music.youtube.com/watch?v=dqP2ec55yGo&si=MCX8rsKsO4cc6hWC)"
+   "note": "千晴の楽曲『無礼KING(feat.KREVA)』でもストレスFREEというリリックが使われている。[Youtubeで無礼KING(feat.KREVA)を聴く](https://music.youtube.com/watch?v=dqP2ec55yGo&si=MCX8rsKsO4cc6hWC)"
  },
  {
    "FIELD1": 29,
@@ -251,7 +245,7 @@ const quizData = [
    "correctAnswer": "新潟",
    "fields": "県",
    "difficulty": "hard",
-   "note": "シングル『Under The Moon』のカップリング曲で47都道府県全てで韻を踏む楽曲。[Youtubeで聴く](https://music.youtube.com/watch?v=U9Xuhwsg4uc&si=dZEmr4fBWfc3TBmM)"
+   "note": "シングル『Under The Moon』のカップリング曲で47都道府県全てで韻を踏む楽曲。[Youtubeで47都道府県RAPを聴く](https://music.youtube.com/watch?v=U9Xuhwsg4uc&si=dZEmr4fBWfc3TBmM)"
  },
  {
    "FIELD1": 31,
@@ -260,7 +254,7 @@ const quizData = [
    "correctAnswer": "久保田利伸;missing",
    "fields": "アーティスト名;曲名",
    "difficulty": "hard",
-   "note": "久保田利伸の名曲『missing』[YoutubeでPVを見る](https://music.youtube.com/watch?v=K55HX0Gv-9I&si=MprwQqNjzryiuHiH)"
+   "note": "久保田利伸の名曲『missing』[YoutubeでmissingのPVを見る](https://music.youtube.com/watch?v=K55HX0Gv-9I&si=MprwQqNjzryiuHiH)"
  },
  {
    "FIELD1": 32,
@@ -296,7 +290,7 @@ const quizData = [
    "correctAnswer": "KREVA;今夜はブギーバック",
    "fields": "アーティスト名;曲名",
    "difficulty": "hard",
-   "note": "[YoutubeでPVを見る](https://youtu.be/V29ypwiF8x8?si=rRivh0SDoujFsCcd)"
+   "note": "[YoutubeでHave a nice day!のPVを見る](https://youtu.be/V29ypwiF8x8?si=rRivh0SDoujFsCcd)"
  },
  {
    "FIELD1": 36,
@@ -315,7 +309,7 @@ const quizData = [
    "fields": "答え",
    "difficulty": "hard",
    "tags": ["代表のみ"],
-   "note": "PVには元ラーメンズの小林賢太郎も出演している。[YoutubeでPVを見る](https://youtu.be/NG2dmHsVm80?si=EjwJ5-4eQnqa8BDL)"
+   "note": "PVには元ラーメンズの小林賢太郎も出演している。[Youtubeで国民的行事のPVを見る](https://youtu.be/NG2dmHsVm80?si=EjwJ5-4eQnqa8BDL)"
  },
  {
    "FIELD1": 38,
@@ -375,7 +369,7 @@ const quizData = [
    "fields": "アーティスト名;曲名",
    "difficulty": "hard",
    "tags": ["特別代表"],
-   "note": "[YoutubeでPVを見る](https://youtu.be/HVJELGsO7YM?si=OY4y_o1BFIBG2RVR)トラックの元ネタはザ・グリンピースのオバQえかきうた。[Youtubeで聴く](https://music.youtube.com/watch?v=uQQqrS7kMhQ&si=CBYIE0BcrnK9-ua5)" 
+   "note": "[Youtubeで八百万 feat 908のPVを見る](https://youtu.be/HVJELGsO7YM?si=OY4y_o1BFIBG2RVR)トラックの元ネタはザ・グリンピースのオバQえかきうた。[Youtubeで聴く](https://music.youtube.com/watch?v=uQQqrS7kMhQ&si=CBYIE0BcrnK9-ua5)" 
  },
  {
    "FIELD1": 44,
@@ -404,7 +398,8 @@ const quizData = [
    "correctAnswer": "金を稼いでる;金をかせいでる",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "会場にはサイプレス上野やKEN THE 390も居た。"
  },
  {
    "FIELD1": 47,
@@ -413,7 +408,8 @@ const quizData = [
    "correctAnswer": "DJ JIN;DJ ジン",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "優しい4つ打ちのビートでヘイターにハッキリと意思表明するKREVAのラップが聴ける作品。"
  },
  {
    "FIELD1": 48,
@@ -422,7 +418,8 @@ const quizData = [
    "correctAnswer": "Have a nice day!;Have a nice day;ハバナイスデイ;ハバナイ",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "[YoutubeでMellow Blueを聴く](https://music.youtube.com/watch?v=K4-D3xVUAjY&si=2zhzjhXhUvSN_BBJ)/[YoutubeでHave a nice day!を聴く](https://music.youtube.com/watch?v=3DvoZNQOL_Q&si=Q4bmumaMZHiTvS11)"
  },
  {
    "FIELD1": 49,
@@ -431,7 +428,8 @@ const quizData = [
    "correctAnswer": "アグレッシ部 Remix;アグレッシ部 REMIX;アグレッシ部リミックス",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "[Youtubeでアグレッシ部 (Remix)を聴く](https://youtu.be/5V91qELOj4w?si=CTwM-4VwmInMqSpY)"
  },
  {
    "FIELD1": 50,
@@ -439,7 +437,8 @@ const quizData = [
    "text": "KREVAがリリースした4枚目のアルバムはなに<br />(なおベスト盤や、録りなおし、ミニアルバムは含まない)",
    "choices": "よろしくお願いします。;GO;SPACE;心臓",
    "correctAnswer": "心臓",
-   "difficulty": "normal"
+   "difficulty": "normal",
+   "note": "当時のインタビューで「これが売れなかったら音楽やめる」と言っていたほど自他ともに認める名盤である。"
  },
  {
    "FIELD1": 51,
@@ -447,7 +446,8 @@ const quizData = [
    "text": "KREVAがリリースした7枚目のアルバムはなに<br />(なおベスト盤や、録りなおし、ミニアルバムは含まない)",
    "choices": "AFTERMIXTAPE;嘘と煩悩;SPACE;LOOP END / LOOP",
    "correctAnswer": "嘘と煩悩",
-   "difficulty": "normal"
+   "difficulty": "normal",
+   "note": "嘘(800)と煩悩(108)を足すと908になるというアイディアやコンセプトはアルバム『よろしくお願いします』を出したころには頭にあったとのこと。"
  },
  {
    "FIELD1": 52,
@@ -463,7 +463,8 @@ const quizData = [
    "text": "KREVAの出生は青森県のどこ?",
    "choices": "青森市;八戸市;平川市;弘前市",
    "correctAnswer": "弘前市",
-   "difficulty": "normal"
+   "difficulty": "normal",
+   "note": "生まれた場所は弘前だが実際に育ったのは神奈川、千葉、東京などの関東圏である。"
  },
  {
    "FIELD1": 54,
@@ -471,7 +472,8 @@ const quizData = [
    "text": "KREVAの生まれ年は?",
    "choices": "1974年;1976年;1978年;1977年",
    "correctAnswer": "1976年",
-   "difficulty": "normal"
+   "difficulty": "normal",
+   "note": "CUEZEROと共に活動していたBY PHAR THE DOPESTには『1976のノイズ』という曲がある。"
  },
  {
    "FIELD1": 55,
@@ -479,7 +481,8 @@ const quizData = [
    "text": "KREVAの誕生日は?",
    "choices": "6月8日;8月18日;6月18日;9月8日",
    "correctAnswer": "6月18日",
-   "difficulty": "normal"
+   "difficulty": "normal",
+   "note": "KREVAとコラボレーションコレクションを発表しているブランド『ALMOSTBLACK』のデザイナーである中嶋峻太も同じ誕生日である。"
  },
  {
    "FIELD1": 56,
