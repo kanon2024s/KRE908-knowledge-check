@@ -169,7 +169,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "元ネタはTyrone Davis - I Got Carried Away [Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
+   "note": "元ネタはTyrone DavisのI Got Carried Away [Youtubeで聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)"
  },
  {
    "FIELD1": 21,
@@ -213,7 +213,8 @@ const quizData = [
    "text": "アルバム「嘘と煩悩」でKREVAが1番初めに作成した曲は何?",
    "correctAnswer": "もう逢いたくて",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "アルバム『嘘と煩悩 (煩悩盤)＜完全生産限定盤＞』の特典CD(ラジオCD“FM908”)にて語られた。[Youtubeで聴く](https://music.youtube.com/watch?v=a-h0qtbOvpc&si=z1xGfhN_ApSpODJD)"
  },
  {
    "FIELD1": 26,
@@ -221,15 +222,17 @@ const quizData = [
    "text": "次のリリックは何の曲でしょう「今この場所以外に世界のどこにもない音色」",
    "correctAnswer": "FRESH MODE",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "ライブでは『音色』を歌唱する際、終盤でこのリリックを引用することが多い。[Youtubeで聴く](https://music.youtube.com/watch?v=L1A-6MqOqxY&si=gGEc4XP15SjLxR7f)"
  },
  {
    "FIELD1": 27,
    "type": "text",
-   "text": "CONCERT TOUR'07「K-ing」@日本武道館のゲストDAYにてアンコールを含め最後に歌った曲はなんでしょう",
+   "text": "CONCERT TOUR'07「K-ing」@日本武道館のゲストDAYで最後に歌った曲はなんでしょう？(アンコールまで含める)",
    "correctAnswer": "終わりたくないオーワラナイ",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "[Youtubeで聴く](https://music.youtube.com/watch?v=mpiSVsP3mko&si=bq-XqHiPKWTDQYVS)"
  },
  {
    "FIELD1": 28,
@@ -237,15 +240,17 @@ const quizData = [
    "text": "ある時期にKREVAが千晴と一緒に曲を大量に作ったことをキッカケにチーム名を決めた。<br />そのチーム名とは?",
    "correctAnswer": "ストレスFREE",
    "fields": "答え",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "千晴の楽曲『無礼KING(feat.KREVA)』でもストレスFREEというリリックが使われている。[Youtubeで聴く](https://music.youtube.com/watch?v=dqP2ec55yGo&si=MCX8rsKsO4cc6hWC)"
  },
  {
    "FIELD1": 29,
    "type": "text",
-   "text": "SPACEのスペシャルエディションはいくつ限定で販売されたでしょう",
+   "text": "SPACEの完全限定生産盤は限定でいくつ販売されたでしょう",
    "correctAnswer": "6908",
    "fields": "個",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "値段も￥6,908(tax in)で販売された。"
  },
  {
    "FIELD1": 30,
@@ -253,7 +258,8 @@ const quizData = [
    "text": "47都道府県RAPにて以下のリリックは何県と韻を踏む為のフリでしょう。<br />進み続けることに意味がある気付けば到着",
    "correctAnswer": "新潟",
    "fields": "県",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "シングル『Under The Moon』のカップリング曲で47都道府県全てで韻を踏む楽曲。[Youtubeで聴く](https://music.youtube.com/watch?v=U9Xuhwsg4uc&si=dZEmr4fBWfc3TBmM)"
  },
  {
    "FIELD1": 31,
@@ -261,7 +267,8 @@ const quizData = [
    "text": "2021年に出演した日テレのmusic blood にてKREVAがある人の曲をカバーした。<br />誰のなんという曲か",
    "correctAnswer": "久保田利伸;missing",
    "fields": "アーティスト名;曲名",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "久保田利伸の名曲『missing』[YoutubeでPVを見る](https://music.youtube.com/watch?v=K55HX0Gv-9I&si=MprwQqNjzryiuHiH)"
  },
  {
    "FIELD1": 32,
@@ -269,15 +276,17 @@ const quizData = [
    "text": "KREVAの楽曲PROPSにはCDとDVDがある。<br />それぞれどの楽曲のシングルCDの先着予約特典として配られたものか",
    "correctAnswer": "OH YEAH;NA NA NA",
    "fields": "CD;DVD",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "ジャケットはCDが緑色でDVDが赤色となっている。"
  },
  {
    "FIELD1": 33,
    "type": "text-multi-field",
    "text": "KREVAの曲knockでは最後の歌部分にAIが使われており、KREVAの歌声をAIよって別人の声に変えて重ねるという手法が取られている。<br />何人分を重ねているでしょう",
-   "correctAnswer": "9",
+   "correctAnswer": "15",
    "fields": "人",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "リアルサウンドのインタビューで語られた。[インタビューを読む](https://realsound.jp/2025/02/post-1925859.html)"
  },
  {
    "FIELD1": 34,
@@ -285,7 +294,8 @@ const quizData = [
    "text": "ファンキーグラマラスのPVでKREVAが着ているアウターの色は何色か?",
    "correctAnswer": "赤",
    "fields": "色",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "PVはDVD『チャート バスターズK！』に収録されている。[ディスコグラフィ](https://kreva.club/discography/3714/)"
  },
  {
    "FIELD1": 35,
@@ -293,7 +303,8 @@ const quizData = [
    "text": "Have a nice day!のPVで最初に流れる曲は誰のなんという曲か?",
    "correctAnswer": "KREVA;今夜はブギーバック",
    "fields": "アーティスト名;曲名",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "[YoutubeでPVを見る](https://youtu.be/V29ypwiF8x8?si=rRivh0SDoujFsCcd)"
  },
  {
    "FIELD1": 36,
@@ -301,7 +312,8 @@ const quizData = [
    "text": "アルバム愛自分博~紫~に付属してるDVDにはイッサイガッサイのPVが別Verとして収録されている。<br />それは何Verか?",
    "correctAnswer": "夏",
    "fields": "ver",
-   "difficulty": "hard"
+   "difficulty": "hard",
+   "note": "色々な服装で夏を満喫するKREVA見れるのでオススメ。"
  },
  {
    "FIELD1": 37,
@@ -310,7 +322,8 @@ const quizData = [
    "correctAnswer": "ゴリラ;ごりら",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "PVには元ラーメンズの小林賢太郎も出演している。[YoutubeでPVを見る](https://youtu.be/NG2dmHsVm80?si=EjwJ5-4eQnqa8BDL)"
  },
  {
    "FIELD1": 38,
@@ -319,7 +332,8 @@ const quizData = [
    "correctAnswer": "3MC＋1DJ;3MC+1DJ",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "KICK THE CAN CREWのアルバム『GREATEST HITS』に収録。[ディスコグラフィー](https://www.kickthecancrew.com/discography/detail.php?id=139)"
  },
  {
    "FIELD1": 39,
@@ -328,7 +342,8 @@ const quizData = [
    "correctAnswer": "CUE ZERO;キューゼロ",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "PVはDVD『チャート バスターズK！』に収録されている。[ディスコグラフィ](https://kreva.club/discography/3714/)"
  },
  {
    "FIELD1": 40,
@@ -337,7 +352,8 @@ const quizData = [
    "correctAnswer": "ブラジャー;下着",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "KREVAのオフィシャルBLOGにて語られている。[BLOGを読む](https://artistblog.jp/blog/kreva_blog/comment216.html)"
  },
  {
    "FIELD1": 41,
@@ -346,7 +362,8 @@ const quizData = [
    "correctAnswer": "ラルフローレン;Ralph Lauren",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "KREVAのオフィシャルBLOGにて語られている。[BLOGを読む](https://artistblog.jp/blog/kreva_blog/2006/05.html)"
  },
  {
    "FIELD1": 42,
@@ -355,7 +372,8 @@ const quizData = [
    "correctAnswer": "COMA-CHI;COMA‐CHI;コマチ",
    "fields": "アーティスト名",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "『me & my kicks remix(KREVA×CMOMA-CHI)勝手にリミックスシリーズVol.3』として配信限定でリリースされている。[AppleMusicで買う](https://music.apple.com/jp/album/%E5%8B%9D%E6%89%8B%E3%81%AB%E3%83%AA%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-single/307457522)
  },
  {
    "FIELD1": 43,
@@ -364,7 +382,8 @@ const quizData = [
    "correctAnswer": "EVISBEATS,AMIDA,エビスビーツ,アミダ;八百万",
    "fields": "アーティスト名;曲名",
    "difficulty": "hard",
-   "tags": ["特別代表"]
+   "tags": ["特別代表"],
+   "note": "[YoutubeでPVを見る](https://youtu.be/HVJELGsO7YM?si=OY4y_o1BFIBG2RVR)トラックの元ネタはザ・グリンピースのオバQえかきうた。[Youtubeで聴く](https://music.youtube.com/watch?v=uQQqrS7kMhQ&si=CBYIE0BcrnK9-ua5)" 
  },
  {
    "FIELD1": 44,
@@ -373,7 +392,8 @@ const quizData = [
    "correctAnswer": "DJ TATSUTA;DJ タツタ;タツタ",
    "fields": "メンバー名",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "KICK THE CAN CREWの『ALL NIGHT LONG』では「顔パス B タツティーと俺」というKREVAのリリックもある。"
  },
  {
    "FIELD1": 45,
@@ -382,7 +402,8 @@ const quizData = [
    "correctAnswer": "環ROY;環ロイ",
    "fields": "答え",
    "difficulty": "hard",
-   "tags": ["代表のみ"]
+   "tags": ["代表のみ"],
+   "note": "[X(旧Twitter)でのKERVAの返信](https://x.com/KREVA_DrK_dj908/status/195544947737362432)環ROYは自身の曲[『J-RAP』](https://youtu.be/aEv0AMn7YrA?si=QfvsoSYIyZYKuCEI)にて「かましてるのはKREVA 頼もしい先輩」とラップもしている。"
  },
  {
    "FIELD1": 46,
