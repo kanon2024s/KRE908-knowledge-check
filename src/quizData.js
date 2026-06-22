@@ -56,7 +56,7 @@ const quizData = [
    "correctAnswer": "575",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "KREVAはかしゆかが好き" 
+   "note": "KREVAはかしゆかが好き。" 
  },
  {
    "FIELD1": 8,
@@ -65,6 +65,7 @@ const quizData = [
    "correctAnswer": "千晴",
    "fields": "答え",
    "difficulty": "hard",
+   "note": "[Youtubeで聴く](https://music.youtube.com/watch?v=AshJgfRgeQU&si=R9As27e9NsWdxcQd)"
  },
  {
    "FIELD1": 9,
@@ -74,15 +75,6 @@ const quizData = [
    "fields": "答え",
    "difficulty": "hard",
    "note": "トラックの元ネタはZulemaのI Love You Baby [YouTubeで聴く](https://www.youtube.com/watch?v=ICSVykezzQ4&list=RDICSVykezzQ4&start_radio=1)"
- },
- {
-   "FIELD1": 10,
-   "type": "text",
-   "text": "KREVAが千晴と一緒に沢山曲を作ったことをキッカケにチーム名を決めた。<br />そのチーム名とは?",
-   "correctAnswer": "ストレスFREE;ストレスフリー",
-   "fields": "答え",
-   "difficulty": "hard",
-   "tags": ["代表のみ"]
  },
  {
    "FIELD1": 11,
