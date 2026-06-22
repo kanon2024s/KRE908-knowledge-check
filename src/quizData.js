@@ -373,7 +373,7 @@ const quizData = [
    "fields": "アーティスト名",
    "difficulty": "hard",
    "tags": ["代表のみ"],
-   "note": "『me & my kicks remix(KREVA×CMOMA-CHI)勝手にリミックスシリーズVol.3』として配信限定でリリースされている。[AppleMusicで買う](https://music.apple.com/jp/album/%E5%8B%9D%E6%89%8B%E3%81%AB%E3%83%AA%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-single/307457522)
+   "note": "『me & my kicks remix(KREVA×CMOMA-CHI)勝手にリミックスシリーズVol.3』として配信限定でリリースされている。[AppleMusicで買う](https://music.apple.com/jp/album/%E5%8B%9D%E6%89%8B%E3%81%AB%E3%83%AA%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-single/307457522)"
  },
  {
    "FIELD1": 43,
