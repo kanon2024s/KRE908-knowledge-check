@@ -155,7 +155,7 @@ const quizData = [
    "correctAnswer": "ため息はCO2",
    "fields": "答え",
    "difficulty": "hard",
-   "note": "元ネタはTyrone DavisのI Got Carried Away [Youtubeで元ネタを聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)[YoutubeでM☆A☆G☆I☆Cを聴く](https://music.youtube.com/watch?v=9whrAmqUYWE&si=FdgP5b4OG9RB40QV)"
+   "note": "元ネタはTyrone DavisのI Got Carried Away [Youtubeで元ネタを聴く](https://youtu.be/q6x5gFGr4ZQ?si=7G94yfsvzkmi2yUJ)/[YoutubeでM☆A☆G☆I☆Cを聴く](https://music.youtube.com/watch?v=9whrAmqUYWE&si=FdgP5b4OG9RB40QV)"
  },
  {
    "FIELD1": 21,
